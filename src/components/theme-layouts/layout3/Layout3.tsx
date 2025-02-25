@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import FuseMessage from '@fuse/core/FuseMessage';
 import clsx from 'clsx';
 import { memo, ReactNode, Suspense } from 'react';
-import Configurator from 'src/components/theme-layouts/components/configurator/Configurator';
+import Configurator from '@/components/theme-layouts/components/configurator/Configurator';
 import useFuseLayoutSettings from '@fuse/core/FuseLayout/useFuseLayoutSettings';
 import FuseSuspense from '@fuse/core/FuseSuspense';
 import { Outlet } from 'react-router';

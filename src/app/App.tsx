@@ -1,6 +1,6 @@
 import FuseLayout from '@fuse/core/FuseLayout';
 import { SnackbarProvider } from 'notistack';
-import themeLayouts from 'src/components/theme-layouts/themeLayouts';
+import themeLayouts from '@/components/theme-layouts/themeLayouts';
 import { Provider } from 'react-redux';
 import FuseSettingsProvider from '@fuse/core/FuseSettings/FuseSettingsProvider';
 import { I18nProvider } from '@i18n/I18nProvider';
