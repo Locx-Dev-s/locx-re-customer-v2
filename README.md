@@ -1,33 +1,174 @@
+## locx-re-customer-v2
 
-# Fuse React Versions
-## Available Versions
-- **Fuse React ViteJs** - Single Page Application (SPA)
-  - ViteJs offers a fast development experience with its instant server start and hot module replacement, making it ideal for SPAs where quick feedback and performance are crucial.
-- **Fuse React NextJs** - Server Side Rendering (SSR)
-  - NextJs excels in SSR by providing automatic static optimization and server-side rendering capabilities, which enhance SEO and initial load performance, making it perfect for dynamic web applications.
+## Node.js
+Este projeto é compatível com as versões do Node.js `>= 22.12.0` e NPM `>= 10.9.0`. Embora possa funcionar com versões mais antigas, é recomendável usar a versão mais recente do LTS (Long Term Support) para obter o melhor desempenho e compatibilidade.
 
-## GitHub Branches
+## ☕ Comandos úteis para desenvolvimento
 
-| | **ViteJs** | **NextJs** |
-|---------|------|----------|
-| **Demo** | [`vitejs-demo`](https://github.com/withinpixels/fuse-react/tree/vitejs-demo) [🌐](https://fuse-react-vitejs-demo.fusetheme.com) | [`nextjs-demo`](https://github.com/withinpixels/fuse-react/tree/nextjs-demo) [🌐](https://fuse-react-nextjs-demo.fusetheme.com) |
-| **Skeleton** | [`vitejs-skeleton`](https://github.com/withinpixels/fuse-react/tree/vitejs-skeleton) [🌐](https://fuse-react-vitejs-skeleton.fusetheme.com) | [`nextjs-skeleton`](https://github.com/withinpixels/fuse-react/tree/nextjs-skeleton) [🌐](https://fuse-react-nextjs-skeleton.fusetheme.com) |
-| **Development Demo** | [`vitejs-demo-dev`](https://github.com/withinpixels/fuse-react/tree/vitejs-demo-dev) [🌐](https://fuse-react-vitejs-demo-dev.fusetheme.com) | [`nextjs-demo-dev`](https://github.com/withinpixels/fuse-react/tree/nextjs-demo-dev) [🌐](https://fuse-react-nextjs-demo-dev.fusetheme.com) |
-| **Development Skeleton** | [`vitejs-skeleton-dev`](https://github.com/withinpixels/fuse-react/tree/vitejs-skeleton-dev) [🌐](https://fuse-react-vitejs-skeleton-dev.fusetheme.com) | [`nextjs-skeleton-dev`](https://github.com/withinpixels/fuse-react/tree/nextjs-skeleton-dev) [🌐](https://fuse-react-nextjs-skeleton-dev.fusetheme.com) |
+- **Iniciar o servidor de desenvolvimento**: Inicia o aplicativo em modo de desenvolvimento.
 
+  ```bash
+    npm run dev
+  ```
+  ```bash 
+    npm run start
+  ```
+- **Buildar o projeto**: Prepara o aplicativo para produção, criando um pacote.
 
-## CLI Reference Links
+  ```bash
+    npm run build
+  ```
+- **Iniciar o servidor de preview de produção**: Inicia o preview do aplicativo em modo de produção.
 
-- [ViteJs CLI Documentation](https://vitejs.dev/guide/cli.html)
- 
-- [NextJs CLI Documentation](https://nextjs.org/docs/api-reference/cli)
+  ```bash
+    npm run preview
+  ```
+- **Auditando dependências de produção**
 
-## License
+  ```bash
+    npm run audit
+  ```
 
-- [License Information](https://themeforest.net/licenses/terms/regular)
+## Tecnologia principais do projeto
+  - Reactjs
+  - Typescript
+  - Redux + RTK + RTK Query
+  - Tailwind
+  - MUI(material-ui)
 
-## More
+## :information_source: Informações importantes
 
-- [Fuse Theme Official Website](https://fusetheme.com/)
+**Configuração**: O projeto foi criado utilizando o tema Fuse(https://fuse-react-vitejs-demo.fusetheme.com/documentation).
+  
+Portanto, possui layouts e componentes prontos para utilização, além de uma estrutura de pastas e arquivos já configurada.
 
+Entendendo isso, o projeto é predefinido para utilizar 1 dos layouts disponíveis no tema Fuse, que é o layout `layout1` e o navbar `style-2`.
+
+Caminho para arquivo de configuração do layout: `./src/configs/settingsConfig.ts`
+
+__OBS: Essa informação é importante para entender a estrutura de pastas e arquivos do projeto, além de como o projeto foi configurado.__
+
+## :mirror: Identidade visual
+- As cores do projeto estão definidas no arquivo `./src/configs/themesConfig.ts`.
+- Opções de temas disponíveis no projeto estão definidas no arquivo `./src/configs/themeOptions.ts`.
+- Para alterar configurações padrão de tipografia, componentes, breakpoints, etc, basta alterar o arquivo `./src/@fuse/default-settings/FuseDefaultSettings.ts`.
+
+## :mag: Uso de ícones no projeto
+
+- **Icones**:
+  - Ícones utilizados no projeto: heroicons (https://heroicons.com/)  
+
+    1. Importe o componente FuseSvgIcon
+      ```tsx
+        import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
+      ```
+    2. Utilize o componente FuseSvgIcon
+    Para utilizar o componente de icone, utilize o prefixos `heroicons-outline` ou `heroicons-solid` + `:` + `o nome do icone`, como nos exemplos abaixo:
+      ```tsx
+       <FuseSvgIcon>heroicons-outline:eye</FuseSvgIcon>
+      ```
+      OU
+      ```tsx
+       <FuseSvgIcon>heroicons-solid:eye</FuseSvgIcon>
+      ```
+
+## 📂 Estrutura do Projeto - `/src`
+
+### 📌 Módulos Principais
+
+- **`@fuse/`** - Configuração do Fuse:
+  - `core/` - Componentes principais do Fuse.
+  - `default-settings/` - Configurações padrão.
+  - `hooks/` - Hooks personalizados do Fuse.
+  - `tailwind/` - Configurações do Tailwind.
+  - `utils/` - Utilitários do Fuse.
+
+- **`@i18n/`** - Configuração de internacionalização.
+- **`@mock-utils/`** - Configuração de mocks para testes.
+
+### 🚀 Features
+
+- **`features/`** - Módulo de funcionalidades da aplicação.
+  - **`auth/`** - Exemplo de uma feature (autenticação):
+    - `components/` - Componentes específicos.
+    - `constants/` - Constantes utilizadas.
+    - `contexts/` - Contextos da funcionalidade.
+    - `hooks/` - Hooks relacionados.
+    - `services/` - Serviços de autenticação.
+    - `types/` - Tipos TypeScript utilizados.
+    - `utils/` - Funções auxiliares.
+    - `Authentication.tsx` - Componente principal.
+
+### 🏗️ Componentes
+
+- **`components/`** - Componentes reutilizáveis da aplicação.
+  - `UI/` - Componentes de interface (ex.: Button, Modal, Table).
+  - `forms/` - Componentes de formulário (ex.: Form, Input, Select).
+
+### ⚡ Hooks
+
+- **`hooks/`** - Hooks globais reutilizáveis.
+
+### 📄 Páginas
+
+- **`pages/`** - Estrutura de páginas da aplicação.
+  - `(public)/` - Páginas acessíveis sem autenticação.
+    - `sign-in/` - Página de login.
+      - `SignInPage.tsx` - Componente principal.
+      - `SignInPageRoute.tsx` - Definição de rotas.
+  - `(private)/` - Páginas protegidas.
+    - `home/` - Página inicial.
+      - `HomePage.tsx` - Componente principal.
+      - `HomePageRoute.tsx` - Definição de rotas.
+
+### ⚙️ Configurações
+
+- **`configs/`** - Configurações globais do projeto.
+  - `navigation-i18n/` - Traduções para a navegação.
+  - `navigationConfig.ts` - Configuração da navegação.
+  - `routesConfig.ts` - Definição de rotas.
+  - `settingsConfig.ts` - Configurações de layout e tema.
+  - `themeOptions.ts` - Opções de tema.
+  - `themesConfig.ts` - Configurações do tema.
+
+### 🌍 Contextos
+
+- **`contexts/`** - Providers de contexto.
+  - `AppContext.tsx` - Configuração de rotas.
+  - `MainThemeProvider.tsx` - Gerenciamento de tema.
+
+### 🏪 Store (Gerenciamento de Estado)
+
+- **`store/`** - Configuração do Redux Toolkit.
+  - `apiService.ts` - Configuração do RTK Query.
+  - `generateReducersFromSlices.ts` - Função para gerar reducers.
+  - `hooks.ts` - Hooks para o store.
+  - `middleware.ts` - Configuração de middlewares.
+  - `rootReducer.ts` - Combinação de reducers.
+  - `store.ts` - Configuração do store.
+  - `withReducer.tsx` - HOC para injetar reducers.
+  - `withSlices.tsx` - HOC para injetar slices.
+
+### 🎨 Estilos
+
+- **`styles/`** - Configurações de estilos (Fuse e Tailwind).
+
+### 🛠️ Utilitários
+
+- **`utils/`** - Funções auxiliares globais.
+  - `apiFetch.ts` - Serviço de requisições API.
+  - `setIn.ts` - Função para definir valores em objetos.
+
+### 📌 Tipos
+
+- **`types/`** - Definições de tipos TypeScript.
+
+### 🏁 Inicialização
+
+- **`App.tsx`** - Componente raiz que integra contextos e store.
+- **`index.tsx`** - Arquivo de inicialização do projeto.
+
+## :page_facing_up: Licença
+
+Consulte o arquivo [LICENSE](LICENSE).
 
