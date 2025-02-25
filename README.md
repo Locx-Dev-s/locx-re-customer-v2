@@ -1,5 +1,8 @@
 ## locx-re-customer-v2
 
+- [LICENSE](LICENSE)
+- [GITFLOW](docs/gitflow.md)
+
 ## Node.js
 Este projeto é compatível com as versões do Node.js `>= 22.12.0` e NPM `>= 10.9.0`. Embora possa funcionar com versões mais antigas, é recomendável usar a versão mais recente do LTS (Long Term Support) para obter o melhor desempenho e compatibilidade.
 
@@ -169,6 +172,4 @@ __OBS: Essa informação é importante para entender a estrutura de pastas e arq
 - **`index.tsx`** - Arquivo de inicialização do projeto.
 
 ## :page_facing_up: Licença
-
-Consulte o arquivo [LICENSE](LICENSE).
 
