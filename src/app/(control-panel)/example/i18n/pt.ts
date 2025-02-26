@@ -1,5 +1,5 @@
 const locale = {
-	TITLE: 'Örnek Sayfa'
+	TITLE: 'Página de Exemplo'
 };
 
 export default locale;

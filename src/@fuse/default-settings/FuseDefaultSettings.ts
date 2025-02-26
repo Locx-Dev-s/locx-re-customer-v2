@@ -435,42 +435,6 @@ export const mustHaveThemeOptions = {
 };
 
 /**
- * The defaultThemes object defines the default themes for the application.
- */
-export const defaultThemes = {
-	default: {
-		palette: {
-			mode: 'light',
-			primary: fuseDark,
-			secondary: {
-				light: lightBlue[400],
-				main: lightBlue[600],
-				dark: lightBlue[700]
-			},
-			error: red
-		},
-		status: {
-			danger: 'orange'
-		}
-	},
-	defaultDark: {
-		palette: {
-			mode: 'dark',
-			primary: fuseDark,
-			secondary: {
-				light: lightBlue[400],
-				main: lightBlue[600],
-				dark: lightBlue[700]
-			},
-			error: red
-		},
-		status: {
-			danger: 'orange'
-		}
-	}
-};
-
-/**
  * The extendThemeWithMixins function extends the theme with mixins.
  */
 export function extendThemeWithMixins(obj: ThemeOptions) {

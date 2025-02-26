@@ -1,13 +1,13 @@
-import i18next from 'i18next';
 import { lazy } from 'react';
-import { FuseRouteItemType } from '@fuse/utils/FuseUtils';
+import i18next from 'i18next';
+
+import type { FuseRouteItemType } from '@fuse/utils/FuseUtils';
+
 import en from './i18n/en';
-import tr from './i18n/tr';
-import ar from './i18n/ar';
+import pt from './i18n/pt';
 
 i18next.addResourceBundle('en', 'examplePage', en);
-i18next.addResourceBundle('tr', 'examplePage', tr);
-i18next.addResourceBundle('ar', 'examplePage', ar);
+i18next.addResourceBundle('pt', 'examplePage', pt);
 
 const Example = lazy(() => import('./Example'));
 

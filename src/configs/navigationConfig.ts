@@ -1,12 +1,11 @@
 import i18n from '@i18n';
-import { FuseNavItemType } from '@fuse/core/FuseNavigation/types/FuseNavItemType';
-import ar from './navigation-i18n/ar';
+import type { FuseNavItemType } from '@fuse/core/FuseNavigation/types/FuseNavItemType';
+
 import en from './navigation-i18n/en';
-import tr from './navigation-i18n/tr';
+import pt from './navigation-i18n/pt';
 
 i18n.addResourceBundle('en', 'navigation', en);
-i18n.addResourceBundle('tr', 'navigation', tr);
-i18n.addResourceBundle('ar', 'navigation', ar);
+i18n.addResourceBundle('pt', 'navigation', pt);
 
 /**
  * The navigationConfig object is an array of navigation items for the Fuse application.

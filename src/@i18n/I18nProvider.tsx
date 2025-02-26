@@ -1,18 +1,17 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, type ReactNode } from 'react';
 import _ from 'lodash';
 import useFuseSettings from '@fuse/core/FuseSettings/hooks/useFuseSettings';
 import i18n from './i18n';
 import I18nContext from './I18nContext';
-import { LanguageType } from './I18nContext';
+import type { LanguageType } from './I18nContext';
 
 type I18nProviderProps = {
-	children: React.ReactNode;
+	children: ReactNode;
 };
 
 const languages: LanguageType[] = [
-	{ id: 'en', title: 'English', flag: 'US' },
-	{ id: 'tr', title: 'Turkish', flag: 'TR' },
-	{ id: 'ar', title: 'Arabic', flag: 'SA' }
+	{ id: 'pt', title: 'Português', flag: 'BR' },
+	{ id: 'en', title: 'English', flag: 'US' }
 ];
 
 export function I18nProvider(props: I18nProviderProps) {

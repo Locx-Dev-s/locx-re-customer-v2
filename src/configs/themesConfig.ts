@@ -1,5 +1,3 @@
-import { fuseDark, skyBlue } from '@fuse/colors';
-import { blueGrey } from '@mui/material/colors';
 import { FuseThemesType } from '@fuse/core/FuseSettings/FuseSettings';
 
 /**

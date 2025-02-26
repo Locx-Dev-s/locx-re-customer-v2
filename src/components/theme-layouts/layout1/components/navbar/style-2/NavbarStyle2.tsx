@@ -9,12 +9,12 @@ import {
 } from '@/components/theme-layouts/components/navbar/navbarSlice';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 
-import { Theme } from '@mui/system/createTheme';
+import type { Theme } from '@mui/system/createTheme';
 import { useEffect } from 'react';
 import useFuseLayoutSettings from '@fuse/core/FuseLayout/useFuseLayoutSettings';
 import useThemeMediaQuery from '@fuse/hooks/useThemeMediaQuery';
 import NavbarStyle2Content from './NavbarStyle2Content';
-import { Layout1ConfigDefaultsType } from '@/components/theme-layouts/layout1/Layout1Config';
+import type { Layout1ConfigDefaultsType } from '@/components/theme-layouts/layout1/Layout1Config';
 
 const navbarWidth = 280;
 
