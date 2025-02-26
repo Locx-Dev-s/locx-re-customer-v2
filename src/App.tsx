@@ -9,7 +9,7 @@ import { enUS } from 'date-fns/locale/en-US';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import ErrorBoundary from '@fuse/utils/ErrorBoundary';
 import Authentication from '@auth/Authentication';
-import MainThemeProvider from '../contexts/MainThemeProvider';
+import MainThemeProvider from '@/contexts/MainThemeProvider';
 import store from '@/store/store';
 import routes from '@/configs/routesConfig';
 import AppContext from '@/contexts/AppContext';

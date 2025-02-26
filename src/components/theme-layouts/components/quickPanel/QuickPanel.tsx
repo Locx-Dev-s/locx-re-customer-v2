@@ -115,7 +115,7 @@ function QuickPanel() {
 					<ListSubheader component="div">Quick Settings</ListSubheader>
 					<ListItem>
 						<ListItemIcon className="min-w-9">
-							<FuseSvgIcon>material-outline:notifications</FuseSvgIcon>
+							<FuseSvgIcon>heroicons-outline:bell</FuseSvgIcon>
 						</ListItemIcon>
 						<ListItemText primary="Notifications" />
 						<ListItemSecondaryAction>
@@ -128,7 +128,7 @@ function QuickPanel() {
 					</ListItem>
 					<ListItem>
 						<ListItemIcon className="min-w-9">
-							<FuseSvgIcon>material-outline:cloud</FuseSvgIcon>
+							<FuseSvgIcon>heroicons-outline:cloud</FuseSvgIcon>
 						</ListItemIcon>
 						<ListItemText primary="Cloud Sync" />
 						<ListItemSecondaryAction>
@@ -141,7 +141,7 @@ function QuickPanel() {
 					</ListItem>
 					<ListItem>
 						<ListItemIcon className="min-w-9">
-							<FuseSvgIcon>material-outline:brightness_high</FuseSvgIcon>
+							<FuseSvgIcon>heroicons-outline:sun</FuseSvgIcon>
 						</ListItemIcon>
 						<ListItemText primary="Retro Thrusters" />
 						<ListItemSecondaryAction>

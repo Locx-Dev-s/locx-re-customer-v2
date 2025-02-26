@@ -20,6 +20,13 @@ type AdjustFontSizeProps = {
 	className?: string;
 };
 
+const FontSizeIcon = () => (
+	<div className="flex h-5 w-5 items-center justify-center p-1">
+		<span className="text-sm font-extrabold mt-auto">T</span>
+		<span className="text-lg font-extrabold">T</span>
+	</div>
+);
+
 /**
  * The adjust font size.
  */
@@ -50,7 +57,7 @@ function AdjustFontSize(props: AdjustFontSizeProps) {
 				aria-haspopup="true"
 				onClick={handleClick}
 			>
-				<FuseSvgIcon size={20}>material-outline:format_size</FuseSvgIcon>
+				<FontSizeIcon />
 			</IconButton>
 			<Menu
 				classes={{ paper: 'w-80' }}
@@ -70,12 +77,7 @@ function AdjustFontSize(props: AdjustFontSizeProps) {
 			>
 				<div className="px-6 py-3">
 					<Typography className="mb-2 flex items-center justify-center text-lg font-semibold">
-						<FuseSvgIcon
-							color="action"
-							className="mr-1"
-						>
-							material-outline:format_size
-						</FuseSvgIcon>
+						<FontSizeIcon />
 						Font Size
 					</Typography>
 					<Slider
