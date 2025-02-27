@@ -1,19 +1,20 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import svgrPlugin from 'vite-plugin-svgr';
-import tsconfigPaths from 'vite-tsconfig-paths';
-import tailwindcss from "@tailwindcss/vite";
+import vitePluginReact from '@vitejs/plugin-react';
+import vitePluginSvgr  from 'vite-plugin-svgr';
+import vitePluginTsconfigPaths from 'vite-tsconfig-paths';
+import tailwindcss from '@tailwindcss/vite';
+import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [
-		react({
+		vitePluginReact({
 			jsxImportSource: '@emotion/react'
 		}),
-		tsconfigPaths({
+		vitePluginTsconfigPaths({
 			parseNative: false
 		}),
-		svgrPlugin(),
+		vitePluginSvgr(),
 		{
 			name: 'custom-hmr-control',
 			handleHotUpdate({ file, server }) {
@@ -25,7 +26,7 @@ export default defineConfig({
 				}
 			}
 		},
-		tailwindcss(),
+		tailwindcss()
 	],
 	build: {
 		outDir: 'build'
@@ -42,17 +43,7 @@ export default defineConfig({
 	},
 	resolve: {
 		alias: {
-			'@': '/src',
-			'@fuse': '/src/@fuse',
-			'@history': '/src/@history',
-			'@lodash': '/src/@lodash',
-			'@mock-api': '/src/@mock-api',
-			'@schema': '/src/@schema',
-			'app/store': '/src/app/store',
-			'app/shared-components': '/src/app/shared-components',
-			'app/configs': '/src/app/configs',
-			'app/theme-layouts': '/src/app/theme-layouts',
-			'app/AppContext': '/src/app/AppContext'
+			'@': path.resolve(__dirname, './src')
 		}
 	},
 	optimizeDeps: {
