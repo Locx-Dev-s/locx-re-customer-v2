@@ -1,9 +1,7 @@
-import { fuseDark } from '@fuse/colors';
-import { lightBlue, red } from '@mui/material/colors';
 import { createTheme } from '@mui/material/styles';
 import qs from 'qs';
-import { ThemeOptions } from '@mui/material/styles/createTheme';
-import { FuseSettingsConfigType } from '@fuse/core/FuseSettings/FuseSettings';
+import type { ThemeOptions } from '@mui/material/styles/createTheme';
+import type { FuseSettingsConfigType } from '@fuse/core/FuseSettings/FuseSettings';
 
 /**
  * The defaultTheme object defines the default color palette for the application.
@@ -11,34 +9,68 @@ import { FuseSettingsConfigType } from '@fuse/core/FuseSettings/FuseSettings';
 const defaultTheme = {
 	palette: {
 		mode: 'light',
+		divider: '#e7e7e7',
 		text: {
-			primary: 'rgb(17, 24, 39)',
-			secondary: 'rgb(107, 114, 128)',
-			disabled: 'rgb(149, 156, 169)'
+			primary: '#5d5d5d',
+			secondary: '#262626',
+			disabled: '#d1d1d1'
 		},
 		common: {
-			black: 'rgb(17, 24, 39)',
-			white: 'rgb(255, 255, 255)'
+			black: '#000000',
+			white: '#FFFFFF'
 		},
 		primary: {
-			light: '#bec1c5',
-			main: '#252f3e',
-			dark: '#0d121b',
-			contrastDefaultColor: 'light'
+			light: '#ffdb0d',
+			main: '#ffcc00',
+			dark: '#d19500',
+			contrastText: '#262626'
 		},
 		secondary: {
-			light: '#bdf2fa',
-			main: '#22d3ee',
-			dark: '#0cb7e2'
+			light: '#fffee7',
+			main: '#fff9c5',
+			dark: '#fff9c5',
+			contrastText: '#262626'
 		},
 		background: {
-			paper: '#FFFFFF',
-			default: '#f6f7f9'
+			paper: '#ffffff',
+			default: '#f6f6f6'
+		},
+		grey: {
+			'100': '#f6f6f6',
+			'200': '#e7e7e7',
+			'300': '#d1d1d1',
+			'400': '#b0b0b0',
+			'500': '#888888',
+			'600': '#6d6d6d',
+			'700': '#5d5d5d',
+			'800': '#4F4F4F',
+			'900': '#454545',
+			A100: '#3d3d3d',
+			A200: '#262626'
+		},
+		success: {
+			light: '#39ae62',
+			main: '#28894a',
+			dark: '#1d4a2e',
+			contrastText: '#262626'
+		},
+		info: {
+			light: '#0284c7',
+			main: '#075985',
+			dark: '#0c4a6e',
+			contrastText: '#262626'
+		},
+		warning: {
+			light: '#dbbe34',
+			main: '#cba727',
+			dark: '#af851f',
+			contrastText: '#262626'
 		},
 		error: {
-			light: '#ffcdd2',
-			main: '#f44336',
-			dark: '#b71c1c'
+			light: '#ef4444',
+			main: '#b91c1c',
+			dark: '#991b1b',
+			contrastText: '#262626'
 		}
 	}
 };
@@ -156,40 +188,78 @@ export const defaultThemeOptions = {
 			}
 		},
 		MuiIconButton: {
+			variants: [
+				{
+					props: { size: 'small' },
+					style: {
+						width: 24,
+						height: 24,
+						maxHeight: 24,
+					}
+				},
+				{
+					props: { size: 'medium' },
+					style: {
+						width: 36,
+						height: 36,
+						maxHeight: 36
+					}
+				},
+				{
+					props: { size: 'large' },
+					style: {
+						width: 40,
+						height: 40,
+						maxHeight: 40
+					}
+				}
+			],
 			styleOverrides: {
 				root: {
-					borderRadius: 8
-				},
-				sizeMedium: {
-					width: 36,
-					height: 36,
-					maxHeight: 36
-				},
-				sizeSmall: {
-					width: 32,
-					height: 32,
-					maxHeight: 32
-				},
-				sizeLarge: {
-					width: 40,
-					height: 40,
-					maxHeight: 40
+					borderRadius: 4
 				}
 			}
 		},
 		MuiBadge: {
-			defaultProps: {},
+			defaultProps: {
+				variant: 'standard'
+			},
 			styleOverrides: {
-				root: {}
+				root: {
+					position: 'relative',
+					display: 'inline-flex',
+					verticalAlign: 'middle',
+					flexShrink: 0,
+					borderRadius: 4,
+					width: 'auto',
+					height: 'auto',
+					justifyContent: 'center',
+					alignItems: 'center'
+				},
+				badge: ({ theme }) => ({
+					backgroundColor: theme.palette.primary.main,
+					color: theme.palette.common.black,
+					fontSize: 8,
+					fontWeight: 700,
+					minWidth: 12,
+					minHeight: 12,
+					height: 'auto',
+					top: 0,
+					padding: 2
+				})
 			}
 		},
 		MuiAvatar: {
 			defaultProps: {},
 			styleOverrides: {
-				root: {
-					width: 36,
-					height: 36
-				}
+				root: ({ theme }) => ({
+					backgroundColor: theme.palette.primary.main,
+					color: theme.palette.common.black,
+					width: 32,
+					height: 32,
+					borderRadius: 4,
+					fontSize: 14
+				})
 			}
 		},
 		MuiButton: {

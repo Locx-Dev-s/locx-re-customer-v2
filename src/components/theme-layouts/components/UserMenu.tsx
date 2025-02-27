@@ -1,30 +1,19 @@
+import { useState } from 'react';
 import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import MenuItem from '@mui/material/MenuItem';
 import Typography from '@mui/material/Typography';
-import { useState } from 'react';
+import Popover from '@mui/material/Popover/Popover';
 import Link from '@fuse/core/Link';
 import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
-import { darken } from '@mui/material/styles';
-import { alpha } from '@mui/system/colorManipulator';
-import Tooltip from '@mui/material/Tooltip';
-import clsx from 'clsx';
-import Popover, { PopoverProps } from '@mui/material/Popover/Popover';
 import useUser from '@auth/useUser';
-
-type UserMenuProps = {
-	className?: string;
-	popoverProps?: Partial<PopoverProps>;
-	arrowIcon?: string;
-};
+import { Badge, IconButton } from '@mui/material';
 
 /**
  * The user menu.
  */
-function UserMenu(props: UserMenuProps) {
-	const { className, popoverProps, arrowIcon = 'heroicons-outline:chevron-up' } = props;
+function UserMenu() {
 	const { data: user, signOut, isGuest } = useUser();
 	const [userMenu, setUserMenu] = useState<HTMLElement | null>(null);
 	const userMenuClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -41,83 +30,56 @@ function UserMenu(props: UserMenuProps) {
 
 	return (
 		<>
-			<Button
-				className={clsx(
-					'user-menu flex justify-start shrink-0 min-h-14 h-14 rounded-lg p-2 space-x-3',
-					className
-				)}
-				sx={(theme) => ({
-					borderColor: theme.palette.divider,
-					'&:hover, &:focus': {
-						backgroundColor: alpha(theme.palette.divider, 0.6),
-						...theme.applyStyles('dark', {
-							backgroundColor: alpha(theme.palette.divider, 0.1)
-						})
-					}
-				})}
-				onClick={userMenuClick}
+			<div
+				className="user-menu flex justify-between items-center gap-1 shrink-0 min-h-14 h-14 p-2 space-x-3"
 				color="inherit"
 			>
 				{user?.photoURL ? (
 					<Avatar
-						sx={(theme) => ({
-							background: theme.palette.background.default,
-							color: theme.palette.text.secondary
-						})}
-						className="avatar w-10 h-10 rounded-lg"
-						alt="user photo"
 						src={user?.photoURL}
-						variant="rounded"
+						alt="user photo"
 					/>
 				) : (
-					<Avatar
-						sx={(theme) => ({
-							background: (theme) => darken(theme.palette.background.default, 0.05),
-							color: theme.palette.text.secondary
-						})}
-						className="avatar md:mx-1"
-					>
-						{user?.displayName?.[0]}
-					</Avatar>
+					<Avatar alt="user photo">{user?.displayName?.[0]}</Avatar>
 				)}
-				<div className="flex flex-col flex-auto space-y-2">
+				<div className="user-menu-info flex flex-col flex-auto space-y-2">
 					<Typography
 						component="span"
-						className="title flex font-semibold text-base capitalize truncate tracking-tight leading-none"
+						className="title flex text-sm capitalize truncate tracking-tight leading-none"
 					>
 						{user?.displayName}
 					</Typography>
-					<Typography
-						className="subtitle flex text-md font-medium tracking-tighter leading-none"
-						color="text.secondary"
-					>
-						{user?.email}
-					</Typography>
 				</div>
-				<div className="flex shrink-0 items-center space-x-2">
-					<Tooltip
-						title={
-							<>
-								{user.role?.toString()}
-								{(!user.role || (Array.isArray(user.role) && user.role.length === 0)) && 'Guest'}
-							</>
-						}
+				<div className="user-menu-actions flex shrink-0 items-center space-x-2">
+					<IconButton
+						onClick={() => {}}
+						size="large"
+					>
+						<Badge
+							badgeContent={10}
+							color="primary"
+						>
+							<FuseSvgIcon
+								className="arrow"
+								size={16}
+							>
+								heroicons-outline:bell-alert
+							</FuseSvgIcon>
+						</Badge>
+					</IconButton>
+					<IconButton
+						onClick={userMenuClick}
+						size="large"
 					>
 						<FuseSvgIcon
-							className="info-icon"
-							size={20}
+							className="arrow"
+							size={16}
 						>
-							heroicons-outline:information-circle
+							heroicons-outline:chevron-down
 						</FuseSvgIcon>
-					</Tooltip>
-					<FuseSvgIcon
-						className="arrow"
-						size={13}
-					>
-						{arrowIcon}
-					</FuseSvgIcon>
+					</IconButton>
 				</div>
-			</Button>
+			</div>
 			<Popover
 				open={Boolean(userMenu)}
 				anchorEl={userMenu}
@@ -131,9 +93,8 @@ function UserMenu(props: UserMenuProps) {
 					horizontal: 'center'
 				}}
 				classes={{
-					paper: 'py-2 min-w-64'
+					paper: 'min-w-40'
 				}}
-				{...popoverProps}
 			>
 				{isGuest ? (
 					<>
@@ -167,7 +128,7 @@ function UserMenu(props: UserMenuProps) {
 						<ListItemIcon className="min-w-9">
 							<FuseSvgIcon>heroicons-outline:arrow-right-on-rectangle</FuseSvgIcon>
 						</ListItemIcon>
-						<ListItemText primary="Sign out" />
+						<ListItemText primary="Sair" />
 					</MenuItem>
 				)}
 			</Popover>

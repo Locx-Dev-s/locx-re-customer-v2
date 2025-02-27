@@ -61,50 +61,92 @@ Theme variables
     --container-6xl: 72rem;
     --container-7xl: 80rem;
 
-    --text-xs: 0.5625rem;  /* 9px */
-    --text-xs-line-height: calc(1 / 0.5625);
+    --text-xxs: 0.625rem; /* 10px */
+    --text-xxs--line-height: calc(1 / 0.625);
+    --text-xs: 0.75rem; /* 12px */
+    --text-xs--line-height: calc(1 / 0.75);
+    --text-sm: 0.875rem; /* 14px */
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-base: 1rem; /* 16px */
+    --text-base--line-height: calc(1.5 / 1);
+    --text-lg: 1.125rem; /* 18px */
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem; /* 20px */
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem; /* 24px */
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem; /* 30px */
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem; /* 36px */
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem; /* 48px */
+    --text-5xl--line-height: 1;
+    --text-6xl: 3.75rem; /* 60px */
+    --text-6xl--line-height: 1;
+    --text-7xl: 4.5rem; /* 72px */
+    --text-7xl--line-height: 1;
+    --text-8xl: 6rem; /* 96px */
+    --text-8xl--line-height: 1;
+    --text-9xl: 8rem; /* 128px */
+    --text-9xl--line-height: 1;
 
-    --text-sm: 0.6875rem;  /* 11px */
-    --text-sm-line-height: calc(1.25 / 0.6875);
+    /* dimensionais */
+    --spacing: 0.25rem; /* 4px */
 
-    --text-md: 0.75rem;    /* 12px */
-    --text-md-line-height: calc(1.25 / 0.75);
+    /* Primary */
+    --color-primary-50: #fffee7;
+    --color-primary-100: #fff9c5;
+    --color-primary-200: #fff485;
+    --color-primary-300: #ffe746;
+    --color-primary-400: #ffdb0d;
+    --color-primary-500: #ffcc00;
+    --color-primary-600: #d19500;
+    --color-primary-700: #a66a02;
+    --color-primary-800: #89530a;
+    --color-primary-900: #74430f;
+    --color-primary-950: #442304;
 
-    --text-base: 0.8125rem;/* 13px */
-    --text-base-line-height: calc(1.5 / 0.8125);
+    /* Neutrals */
+    --color-white: #ffffff;
+    --color-black: #000000;
 
-    --text-lg: 0.875rem;   /* 14px */
-    --text-lg-line-height: calc(1.5 / 0.875);
+    --color-neutral-100: #f6f6f6;
+    --color-neutral-200: #e7e7e7;
+    --color-neutral-300: #d1d1d1;
+    --color-neutral-400: #b0b0b0;
+    --color-neutral-500: #888888;
+    --color-neutral-600: #6d6d6d;
+    --color-neutral-700: #5d5d5d;
+    --color-neutral-800: #4F4F4F;
+    --color-neutral-900: #454545;
 
-    --text-xl: 1rem;       /* 16px */
-    --text-xl-line-height: calc(1.5 / 1);
+    --color-neutral-a100: #3d3d3d;
+    --color-neutral-a200: #262626;
+    
+    /* Semantic Colors */  
+    --color-success-100: #f2fbf5;
+    --color-success-200: #e0f8e8;
+    --color-success-300: #39ae62;
+    --color-success-400: #28894a;
+    --color-success-500: #1d4a2e;
+  
+    --color-info-100: #f0faff;
+    --color-info-200: #e0f4fe;
+    --color-info-300: #0284c7;
+    --color-info-400: #075985;
+    --color-info-500: #0c4a6e;  
 
-    --text-2xl: 1.125rem;  /* 18px */
-    --text-2xl-line-height: calc(1.75 / 1.125);
+    --color-warning-100: #fbfaeb;
+    --color-warning-200: #f6f3cb;
+    --color-warning-300: #dbbe34;
+    --color-warning-400: #cba727;
+    --color-warning-500: #af851f;
 
-    --text-3xl: 1.375rem;  /* 22px */
-    --text-3xl-line-height: calc(1.75 / 1.375);
-
-    --text-4xl: 1.5rem;    /* 24px */
-    --text-4xl-line-height: calc(2 / 1.5);
-
-    --text-5xl: 1.75rem;   /* 28px */
-    --text-5xl-line-height: calc(2 / 1.75);
-
-    --text-6xl: 2.25rem;   /* 36px */
-    --text-6xl-line-height: calc(2 / 2.25);
-
-    --text-7xl: 3rem;      /* 48px */
-    --text-7xl-line-height: calc(2 / 3);
-
-    --text-8xl: 3.5rem;    /* 56px */
-    --text-8xl-line-height: calc(2 / 3.5);
-
-    --text-9xl: 4rem;      /* 64px */
-    --text-9xl-line-height: calc(2 / 4);
-
-    --text-10xl: 5rem;     /* 80px */
-    --text-10xl-line-height: calc(2 / 5);
+    --color-danger-100: #fef2f2;
+    --color-danger-200: #fee2e2;
+    --color-danger-300: #ef4444;
+    --color-danger-400: #b91c1c;
+    --color-danger-500: #991b1b;
 }
 
 .container {

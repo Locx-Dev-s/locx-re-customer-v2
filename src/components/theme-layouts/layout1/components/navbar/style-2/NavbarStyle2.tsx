@@ -16,7 +16,7 @@ import useThemeMediaQuery from '@fuse/hooks/useThemeMediaQuery';
 import NavbarStyle2Content from './NavbarStyle2Content';
 import type { Layout1ConfigDefaultsType } from '@/components/theme-layouts/layout1/Layout1Config';
 
-const navbarWidth = 280;
+const navbarWidth = 264;
 
 type StyledNavBarPropsProps = {
 	theme?: Theme;
@@ -104,15 +104,17 @@ const StyledNavbar = styled('div')<StyledNavBarProps>(({ theme }) => ({
 			props: ({ foldedandclosed }) => foldedandclosed,
 			style: {
 				'& .NavbarStyle2-content': {
-					'& .logo-icon': {
-						width: 44,
-						height: 44
-					},
-					'& .logo-text': {
-						opacity: 0
-					},
-					'& .react-badge': {
-						opacity: 0
+					'& .navbar-header': {
+						gap: '4px !important',
+						justifyContent: 'center !important',
+						flexDirection: 'column!important',
+						height: '88px !important',
+						'& .logo-container': {
+							flex: 'none !important'
+						},
+						'& .logo-icon': {
+							height: 32
+						}
 					},
 					'& .fuse-list-item': {
 						width: 52
@@ -136,16 +138,10 @@ const StyledNavbar = styled('div')<StyledNavBarProps>(({ theme }) => ({
 					},
 					'& .user-menu': {
 						minWidth: 52,
-						'& .title': {
+						'& .user-menu-info': {
 							opacity: 0
 						},
-						'& .subtitle': {
-							opacity: 0
-						},
-						'& .info-icon': {
-							opacity: 0
-						},
-						'& .arrow': {
+						'& .user-menu-actions': {
 							opacity: 0
 						}
 					}
@@ -199,7 +195,7 @@ function NavbarStyle2() {
 		>
 			{!isMobile && (
 				<StyledNavbar
-					className="hidden lg:flex sticky top-0 z-20 h-screen flex-auto shrink-0 flex-col overflow-hidden shadow-sm"
+					className="hidden lg:flex sticky top-0 z-20 h-screen flex-auto shrink-0 flex-col overflow-hidden"
 					position={config?.navbar?.position}
 					folded={folded ? 1 : 0}
 					foldedandopened={foldedandopened ? 1 : 0}

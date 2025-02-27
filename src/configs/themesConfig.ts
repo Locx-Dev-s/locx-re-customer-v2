@@ -1,4 +1,4 @@
-import { FuseThemesType } from '@fuse/core/FuseSettings/FuseSettings';
+import type { FuseThemesType } from '@fuse/core/FuseSettings/FuseSettings';
 
 /**
  * The lightPaletteText object defines the text color palette for the light theme.
@@ -25,36 +25,68 @@ export const themesConfig: FuseThemesType = {
 	default: {
 		palette: {
 			mode: 'light',
-			divider: 'rgba(214,214,214,0.7)',
+			divider: '#e7e7e7',
 			text: {
-				primary: '#212121',
-				secondary: '#5F6368'
+				primary: '#5d5d5d',
+				secondary: '#262626',
+				disabled: '#d1d1d1'
 			},
 			common: {
 				black: '#000000',
 				white: '#FFFFFF'
 			},
 			primary: {
-				light: '#536D89',
-				main: '#0A74DA',
-				dark: '#00418A',
-				contrastText: '#FFFFFF'
+				light: '#ffdb0d',
+				main: '#ffcc00',
+				dark: '#d19500',
+				contrastText: '#262626'
 			},
 			secondary: {
-				light: '#6BC9F7',
-				main: '#00A4EF',
-				dark: '#0078D7',
-				contrastText: '#FFFFFF'
+				light: '#fffee7',
+				main: '#fff9c5',
+				dark: '#fff9c5',
+				contrastText: '#262626'
 			},
 			background: {
-				paper: '#F4F4F4',
-				default: '#E8E8E8'
+				paper: '#ffffff',
+				default: '#f6f6f6'
+			},
+			grey: {
+				'100': '#f6f6f6',
+				'200': '#e7e7e7',
+				'300': '#d1d1d1',
+				'400': '#b0b0b0',
+				'500': '#888888',
+				'600': '#6d6d6d',
+				'700': '#5d5d5d',
+				'800': '#4F4F4F',
+				'900': '#454545',
+				A100: '#3d3d3d',
+				A200: '#262626'
+			},
+			success: {
+				light: '#39ae62',
+				main: '#28894a',
+				dark: '#1d4a2e',
+				contrastText: '#262626'
+			},
+			info: {
+				light: '#0284c7',
+				main: '#075985',
+				dark: '#0c4a6e',
+				contrastText: '#262626'
+			},
+			warning: {
+				light: '#dbbe34',
+				main: '#cba727',
+				dark: '#af851f',
+				contrastText: '#262626'
 			},
 			error: {
-				light: '#FFCDD2',
-				main: '#D32F2F',
-				dark: '#B71C1C',
-				contrastText: '#FFFFFF'
+				light: '#ef4444',
+				main: '#b91c1c',
+				dark: '#991b1b',
+				contrastText: '#262626'
 			}
 		}
 	},
@@ -63,34 +95,66 @@ export const themesConfig: FuseThemesType = {
 			mode: 'dark',
 			divider: 'rgba(79,79,79,0.5)',
 			text: {
-				primary: '#E0E0E0',
-				secondary: '#B0BEC5'
+				primary: '#e7e7e7',
+				secondary: '#ffffff',
+				disabled: '#454545'
 			},
 			common: {
 				black: '#000000',
 				white: '#FFFFFF'
 			},
 			primary: {
-				light: '#536D89',
-				main: '#0A74DA',
-				dark: '#00418A',
-				contrastText: '#FFFFFF'
+				light: '#ffdb0d',
+				main: '#ffcc00',
+				dark: '#d19500',
+				contrastText: '#262626'
 			},
 			secondary: {
-				light: '#6BC9F7',
-				main: '#00A4EF',
-				dark: '#0078D7',
-				contrastText: '#FFFFFF'
+				light: '#fffee7',
+				main: '#ffffff',
+				dark: '#fff9c5',
+				contrastText: '#262626'
 			},
 			background: {
-				paper: '#1E1E1E',
-				default: '#121212'
+				paper: '#262626',
+				default: '#3d3d3d'
+			},
+			grey: {
+				'100': '#f6f6f6',
+				'200': '#e7e7e7',
+				'300': '#d1d1d1',
+				'400': '#b0b0b0',
+				'500': '#888888',
+				'600': '#6d6d6d',
+				'700': '#5d5d5d',
+				'800': '#4F4F4F',
+				'900': '#454545',
+				A100: '#3d3d3d',
+				A200: '#262626'
+			},
+			success: {
+				light: '#39ae62',
+				main: '#28894a',
+				dark: '#1d4a2e',
+				contrastText: '#ffffff'
+			},
+			info: {
+				light: '#0284c7',
+				main: '#075985',
+				dark: '#0c4a6e',
+				contrastText: '#ffffff'
+			},
+			warning: {
+				light: '#dbbe34',
+				main: '#cba727',
+				dark: '#af851f',
+				contrastText: '#ffffff'
 			},
 			error: {
-				light: '#FFCDD2',
-				main: '#D32F2F',
-				dark: '#B71C1C',
-				contrastText: '#FFFFFF'
+				light: '#ef4444',
+				main: '#b91c1c',
+				dark: '#991b1b',
+				contrastText: '#ffffff'
 			}
 		}
 	}

@@ -1,34 +1,20 @@
 import { useTranslation } from 'react-i18next';
 
-import { styled } from '@mui/material/styles';
-
+import PageSimple from '@/components/app/PageSimple';
 import DemoContent from '@fuse/core/DemoContent';
-import FusePageSimple from '@fuse/core/FusePageSimple';
-
-const Root = styled(FusePageSimple)(({ theme }) => ({
-	'& .FusePageSimple-header': {
-		backgroundColor: theme.palette.background.paper,
-		borderBottomWidth: 1,
-		borderStyle: 'solid',
-		borderColor: theme.palette.divider
-	},
-	'& .FusePageSimple-content': {},
-	'& .FusePageSimple-sidebarHeader': {},
-	'& .FusePageSimple-sidebarContent': {}
-}));
 
 function Example() {
 	const { t } = useTranslation('examplePage');
 
 	return (
-		<Root
+		<PageSimple
 			header={
 				<div className="p-6">
 					<h4>{t('TITLE')}</h4>
 				</div>
 			}
 			content={
-				<div className="p-6">
+				<div className="h-full p-6">
 					<h4>Content</h4>
 					<br />
 					<DemoContent />

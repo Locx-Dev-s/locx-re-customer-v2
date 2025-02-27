@@ -3,8 +3,7 @@ import { useAppDispatch } from '@/store/hooks';
 import _ from 'lodash';
 import useThemeMediaQuery from '@fuse/hooks/useThemeMediaQuery';
 import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
-import clsx from 'clsx';
-import { IconButtonProps } from '@mui/material/IconButton/IconButton';
+import type { IconButtonProps } from '@mui/material/IconButton/IconButton';
 import useFuseLayoutSettings from '@fuse/core/FuseLayout/useFuseLayoutSettings';
 import useFuseSettings from '@fuse/core/FuseSettings/hooks/useFuseSettings';
 import { navbarToggle, navbarToggleMobile } from './navbarSlice';
@@ -16,7 +15,6 @@ export type NavbarToggleButtonProps = IconButtonProps;
  */
 function NavbarToggleButton(props: NavbarToggleButtonProps) {
 	const {
-		className = '',
 		children = (
 			<FuseSvgIcon
 				size={20}
@@ -45,7 +43,6 @@ function NavbarToggleButton(props: NavbarToggleButtonProps) {
 				}
 			}}
 			{...rest}
-			className={clsx('border border-divider', className)}
 		>
 			{children}
 		</IconButton>

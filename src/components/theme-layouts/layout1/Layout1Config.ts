@@ -14,11 +14,11 @@ const Layout1Config = {
 			open: true
 		},
 		toolbar: {
-			display: true,
+			display: false,
 			style: 'fixed'
 		},
 		footer: {
-			display: true,
+			display: false,
 			style: 'fixed'
 		},
 		leftSidePanel: {
