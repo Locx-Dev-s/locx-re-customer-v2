@@ -171,5 +171,3 @@ __OBS: Essa informação é importante para entender a estrutura de pastas e arq
 - **`App.tsx`** - Componente raiz que integra contextos e store.
 - **`index.tsx`** - Arquivo de inicialização do projeto.
 
-## :page_facing_up: Licença
-
