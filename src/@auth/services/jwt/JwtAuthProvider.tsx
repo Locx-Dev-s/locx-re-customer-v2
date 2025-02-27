@@ -1,12 +1,17 @@
 import { useState, useEffect, useCallback, useMemo, useImperativeHandle } from 'react';
-import { FuseAuthProviderComponentProps, FuseAuthProviderState } from '@/@fuse/core/FuseAuthProvider/types/FuseAuthTypes';
+
+import type {
+	FuseAuthProviderComponentProps,
+	FuseAuthProviderState
+} from '@/@fuse/core/FuseAuthProvider/types/FuseAuthTypes';
 import useLocalStorage from '@/@fuse/hooks/useLocalStorage';
 import { authRefreshToken, authSignIn, authSignInWithToken, authSignUp, authUpdateDbUser } from '@/@auth/authApi';
-import { User } from '../../user';
-import { removeGlobalHeaders, setGlobalHeaders } from '@/utils/apiFetch';
-import { isTokenValid } from './utils/jwtUtils';
+import { User } from '@/@auth/user';
 import JwtAuthContext from '@/@auth/services/jwt/JwtAuthContext';
 import { JwtAuthContextType } from '@/@auth/services/jwt/JwtAuthContext';
+import { removeGlobalHeaders, setGlobalHeaders } from '@/utils/apiFetch';
+
+import { isTokenValid } from './utils/jwtUtils';
 
 export type JwtSignInPayload = {
 	email: string;

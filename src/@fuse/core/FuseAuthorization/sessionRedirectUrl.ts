@@ -1,7 +1,7 @@
 /**
  * Session redirect url
  */
-const sessionStorageKey = 'fuseRedirectUrl';
+const sessionStorageKey = '@locxRE_RedirectUrl';
 
 /**
  * Get session redirect url

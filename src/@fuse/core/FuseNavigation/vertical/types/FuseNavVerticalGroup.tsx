@@ -64,7 +64,7 @@ function FuseNavVerticalGroup(props: FuseNavItemComponentProps) {
 							margin: 0,
 							'& > .MuiListItemText-primary': {
 								fontSize: 12,
-								color: 'secondary.main',
+								color: 'text.secondary',
 								fontWeight: 600,
 								textTransform: 'uppercase',
 								letterSpacing: '.05em',
@@ -75,7 +75,7 @@ function FuseNavVerticalGroup(props: FuseNavItemComponentProps) {
 							},
 							'& > .MuiListItemText-secondary': {
 								fontSize: 11,
-								color: 'text.disabled',
+								color: 'text.primary',
 								letterSpacing: '.06px',
 								fontWeight: 500,
 								lineHeight: '1.5'
