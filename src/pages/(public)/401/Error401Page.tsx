@@ -1,8 +1,8 @@
 import Typography from '@mui/material/Typography';
 import { motion } from 'motion/react';
-import Link from '@fuse/core/Link';
+import Link from '@/@fuse/core/Link';
 import Box from '@mui/material/Box';
-import useUser from '@auth/useUser';
+import useUser from '@/@auth/useUser';
 
 /**
  * Error 401 page.

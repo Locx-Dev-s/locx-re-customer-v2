@@ -1,4 +1,4 @@
-import NavLinkAdapter from '@fuse/core/NavLinkAdapter';
+import NavLinkAdapter from '@/@fuse/core/NavLinkAdapter';
 import { alpha, styled } from '@mui/material/styles';
 import Tooltip from '@mui/material/Tooltip';
 import ListItemText from '@mui/material/ListItemText';

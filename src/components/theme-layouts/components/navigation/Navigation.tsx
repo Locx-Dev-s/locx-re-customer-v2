@@ -1,9 +1,9 @@
-import FuseNavigation from '@fuse/core/FuseNavigation';
+import FuseNavigation from '@/@fuse/core/FuseNavigation';
 import clsx from 'clsx';
 import { useMemo } from 'react';
 import { useAppDispatch } from '@/store/hooks';
-import useThemeMediaQuery from '@fuse/hooks/useThemeMediaQuery';
-import { FuseNavigationProps } from '@fuse/core/FuseNavigation/FuseNavigation';
+import useThemeMediaQuery from '@/@fuse/hooks/useThemeMediaQuery';
+import { FuseNavigationProps } from '@/@fuse/core/FuseNavigation/FuseNavigation';
 import { navbarCloseMobile } from '../navbar/navbarSlice';
 import useNavigation from './hooks/useNavigation';
 

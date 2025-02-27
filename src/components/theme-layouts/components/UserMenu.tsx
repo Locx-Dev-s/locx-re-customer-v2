@@ -5,9 +5,9 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuItem from '@mui/material/MenuItem';
 import Typography from '@mui/material/Typography';
 import Popover from '@mui/material/Popover/Popover';
-import Link from '@fuse/core/Link';
-import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
-import useUser from '@auth/useUser';
+import Link from '@/@fuse/core/Link';
+import FuseSvgIcon from '@/@fuse/core/FuseSvgIcon';
+import useUser from '@/@auth/useUser';
 import { Badge, IconButton } from '@mui/material';
 
 /**

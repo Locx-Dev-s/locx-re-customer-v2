@@ -1,5 +1,5 @@
-import { FuseRouteItemType } from '@fuse/utils/FuseUtils';
-import authRoles from '@auth/authRoles';
+import { FuseRouteItemType } from '@/@fuse/utils/FuseUtils';
+import authRoles from '@/@auth/authRoles';
 import SignInPage from './SignInPage';
 
 const SignInPageRoute: FuseRouteItemType = {

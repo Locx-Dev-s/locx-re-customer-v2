@@ -1,4 +1,4 @@
-import AwsAuthenticator from '@auth/services/aws/components/AWSAuthenticator';
+import AwsAuthenticator from '@/@auth/services/aws/components/AWSAuthenticator';
 
 function AwsSignInTab() {
 	return (

@@ -63,7 +63,7 @@ __OBS: Essa informação é importante para entender a estrutura de pastas e arq
 
     1. Importe o componente FuseSvgIcon
       ```tsx
-        import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
+        import FuseSvgIcon from '@/@fuse/core/FuseSvgIcon';
       ```
     2. Utilize o componente FuseSvgIcon
     Para utilizar o componente de icone, utilize o prefixos `heroicons-outline` ou `heroicons-solid` + `:` + `o nome do icone`, como nos exemplos abaixo:

@@ -1,6 +1,6 @@
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
-import Link from '@fuse/core/Link';
+import Link from '@/@fuse/core/Link';
 
 /**
  * The sign out page.

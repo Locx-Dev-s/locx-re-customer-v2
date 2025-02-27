@@ -1,7 +1,7 @@
 import { createContext } from 'react';
 import { FuseAuthProviderState, FuseAuthProviderType } from './types/FuseAuthTypes';
 import { PartialDeep } from 'type-fest';
-import { User } from '@auth/user';
+import { User } from '@/@auth/user';
 
 export type AuthState = FuseAuthProviderState & {
 	provider: string | null;

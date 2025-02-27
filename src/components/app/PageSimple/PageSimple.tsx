@@ -6,7 +6,7 @@ import GlobalStyles from '@mui/material/GlobalStyles';
 import type { SystemStyleObject } from '@mui/system/styleFunctionSx/styleFunctionSx';
 import type { Theme } from '@mui/material/styles';
 
-import FuseScrollbars, { type FuseScrollbarsProps } from '@fuse/core/FuseScrollbars/FuseScrollbars';
+import FuseScrollbars, { type FuseScrollbarsProps } from '@/@fuse/core/FuseScrollbars/FuseScrollbars';
 
 import PageSimpleHeader from './PageSimpleHeader';
 

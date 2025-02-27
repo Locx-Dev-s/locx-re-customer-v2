@@ -1,6 +1,6 @@
 import { Tooltip, Typography } from '@mui/material';
-import Link from '@fuse/core/Link';
-import usePathname from '@fuse/hooks/usePathname';
+import Link from '@/@fuse/core/Link';
+import usePathname from '@/@fuse/hooks/usePathname';
 import { useState } from 'react';
 import Box from '@mui/material/Box';
 

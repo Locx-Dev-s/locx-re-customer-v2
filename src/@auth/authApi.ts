@@ -1,5 +1,5 @@
-import { User } from '@auth/user';
-import UserModel from '@auth/user/models/UserModel';
+import { User } from '@/@auth/user';
+import UserModel from '@/@auth/user/models/UserModel';
 import { PartialDeep } from 'type-fest';
 import apiFetch from '@/utils/apiFetch';
 

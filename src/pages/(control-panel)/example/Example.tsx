@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
 import PageSimple from '@/components/app/PageSimple';
-import DemoContent from '@fuse/core/DemoContent';
+import DemoContent from '@/@fuse/core/DemoContent';
 
 function Example() {
 	const { t } = useTranslation('examplePage');

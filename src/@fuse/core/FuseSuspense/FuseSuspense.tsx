@@ -1,6 +1,6 @@
-import FuseLoading from '@fuse/core/FuseLoading';
+import FuseLoading from '@/@fuse/core/FuseLoading';
 import { ReactNode, Suspense } from 'react';
-import { FuseLoadingProps } from '@fuse/core/FuseLoading/FuseLoading';
+import { FuseLoadingProps } from '@/@fuse/core/FuseLoading/FuseLoading';
 
 type FuseSuspenseProps = {
 	loadingProps?: FuseLoadingProps;

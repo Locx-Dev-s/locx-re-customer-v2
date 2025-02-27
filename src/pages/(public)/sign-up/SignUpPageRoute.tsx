@@ -1,5 +1,5 @@
-import { FuseRouteItemType } from '@fuse/utils/FuseUtils';
-import authRoles from '@auth/authRoles';
+import { FuseRouteItemType } from '@/@fuse/utils/FuseUtils';
+import authRoles from '@/@auth/authRoles';
 import SignUpPage from './SignUpPage';
 
 /**

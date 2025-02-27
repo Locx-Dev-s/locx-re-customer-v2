@@ -1,6 +1,6 @@
 import Button, { ButtonProps } from '@mui/material/Button';
 import clsx from 'clsx';
-import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
+import FuseSvgIcon from '@/@fuse/core/FuseSvgIcon';
 
 type PurchaseButtonProps = ButtonProps & {
 	className?: string;

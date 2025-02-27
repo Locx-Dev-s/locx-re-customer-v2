@@ -3,7 +3,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import Toolbar from '@mui/material/Toolbar';
 import clsx from 'clsx';
 import { memo } from 'react';
-import { useFooterTheme } from '@fuse/core/FuseSettings/hooks/fuseThemeHooks';
+import { useFooterTheme } from '@/@fuse/core/FuseSettings/hooks/fuseThemeHooks';
 
 type FooterLayout2Props = {
 	className?: string;

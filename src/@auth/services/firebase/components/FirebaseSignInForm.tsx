@@ -6,7 +6,7 @@ import _ from 'lodash';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useAppDispatch } from '@/store/hooks';
-import { showMessage } from '@fuse/core/FuseMessage/fuseMessageSlice';
+import { showMessage } from '@/@fuse/core/FuseMessage/fuseMessageSlice';
 import firebase from 'firebase/compat/app';
 import useFirebaseAuth from '../useFirebaseAuth';
 import { FirebaseSignInPayload } from '../FirebaseAuthProvider';

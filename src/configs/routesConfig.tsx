@@ -1,8 +1,8 @@
 // Dynamically import all *ConfigConfig.tsx files from the app folder
 import { Navigate } from 'react-router';
-import FuseLoading from '@fuse/core/FuseLoading';
-import ErrorBoundary from '@fuse/utils/ErrorBoundary';
-import type { FuseRouteConfigType, FuseRoutesType } from '@fuse/utils/FuseUtils';
+import FuseLoading from '@/@fuse/core/FuseLoading';
+import ErrorBoundary from '@/@fuse/utils/ErrorBoundary';
+import type { FuseRouteConfigType, FuseRoutesType } from '@/@fuse/utils/FuseUtils';
 
 import App from '@/App';
 import Error404Page from '@/pages/(public)/404/Error404Page';

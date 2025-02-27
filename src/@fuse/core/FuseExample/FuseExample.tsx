@@ -1,4 +1,4 @@
-import FuseHighlight from '@fuse/core/FuseHighlight';
+import FuseHighlight from '@/@fuse/core/FuseHighlight';
 import Card from '@mui/material/Card';
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';

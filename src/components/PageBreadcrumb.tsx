@@ -1,10 +1,10 @@
 import Breadcrumbs, { BreadcrumbsProps } from '@mui/material/Breadcrumbs';
-import { FuseNavItemType } from '@fuse/core/FuseNavigation/types/FuseNavItemType';
-import usePathname from '@fuse/hooks/usePathname';
+import { FuseNavItemType } from '@/@fuse/core/FuseNavigation/types/FuseNavItemType';
+import usePathname from '@/@fuse/hooks/usePathname';
 
 import Typography from '@mui/material/Typography';
 import clsx from 'clsx';
-import Link from '@fuse/core/Link';
+import Link from '@/@fuse/core/Link';
 import useNavigation from './theme-layouts/components/navigation/hooks/useNavigation';
 
 type PageBreadcrumbProps = BreadcrumbsProps & {

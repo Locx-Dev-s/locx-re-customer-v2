@@ -1,4 +1,4 @@
-import FirebaseSignUpForm from '@auth/services/firebase/components/FirebaseSignUpForm';
+import FirebaseSignUpForm from '@/@auth/services/firebase/components/FirebaseSignUpForm';
 
 function FirebaseSignUpTab() {
 	return <FirebaseSignUpForm />;

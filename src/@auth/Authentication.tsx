@@ -1,12 +1,12 @@
 import React from 'react';
 
-import AWSAuthProvider from '@auth/services/aws/AWSAuthProvider';
-import FirebaseAuthProvider from '@auth/services/firebase/FirebaseAuthProvider';
-import JwtAuthProvider from '@auth/services/jwt/JwtAuthProvider';
-import { FuseAuthProviderType } from '@fuse/core/FuseAuthProvider/types/FuseAuthTypes';
-import FuseAuthProvider from '@fuse/core/FuseAuthProvider';
-import FuseAuthorization from '@fuse/core/FuseAuthorization';
-import { User } from '@auth/user';
+import AWSAuthProvider from '@/@auth/services/aws/AWSAuthProvider';
+import FirebaseAuthProvider from '@/@auth/services/firebase/FirebaseAuthProvider';
+import JwtAuthProvider from '@/@auth/services/jwt/JwtAuthProvider';
+import { FuseAuthProviderType } from '@/@fuse/core/FuseAuthProvider/types/FuseAuthTypes';
+import FuseAuthProvider from '@/@fuse/core/FuseAuthProvider';
+import FuseAuthorization from '@/@fuse/core/FuseAuthorization';
+import { User } from '@/@auth/user';
 /**
  * The Authentication providers.
  */

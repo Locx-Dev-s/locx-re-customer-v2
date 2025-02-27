@@ -1,4 +1,4 @@
-import FuseScrollbars from '@fuse/core/FuseScrollbars';
+import FuseScrollbars from '@/@fuse/core/FuseScrollbars';
 import { ReactNode } from 'react';
 
 /**

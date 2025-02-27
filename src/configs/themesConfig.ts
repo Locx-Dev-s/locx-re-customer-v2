@@ -1,4 +1,4 @@
-import type { FuseThemesType } from '@fuse/core/FuseSettings/FuseSettings';
+import type { FuseThemesType } from '@/@fuse/core/FuseSettings/FuseSettings';
 
 /**
  * The lightPaletteText object defines the text color palette for the light theme.

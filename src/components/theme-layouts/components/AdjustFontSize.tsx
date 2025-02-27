@@ -3,7 +3,7 @@ import Slider from '@mui/material/Slider';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
-import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
+import FuseSvgIcon from '@/@fuse/core/FuseSvgIcon';
 import clsx from 'clsx';
 
 const marks = [

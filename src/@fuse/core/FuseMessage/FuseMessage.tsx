@@ -5,7 +5,7 @@ import Snackbar from '@mui/material/Snackbar';
 import SnackbarContent from '@mui/material/SnackbarContent';
 import Typography from '@mui/material/Typography';
 import { memo } from 'react';
-import { hideMessage, selectFuseMessageOptions, selectFuseMessageState } from '@fuse/core/FuseMessage/fuseMessageSlice';
+import { hideMessage, selectFuseMessageOptions, selectFuseMessageState } from '@/@fuse/core/FuseMessage/fuseMessageSlice';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import FuseSvgIcon from '../FuseSvgIcon';
 

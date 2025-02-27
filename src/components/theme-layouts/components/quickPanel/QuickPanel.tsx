@@ -1,4 +1,4 @@
-import FuseScrollbars from '@fuse/core/FuseScrollbars';
+import FuseScrollbars from '@/@fuse/core/FuseScrollbars';
 import { styled } from '@mui/material/styles';
 import Divider from '@mui/material/Divider';
 import List from '@mui/material/List';
@@ -13,7 +13,7 @@ import Typography from '@mui/material/Typography';
 import { format } from 'date-fns/format';
 import { useState } from 'react';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
-import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
+import FuseSvgIcon from '@/@fuse/core/FuseSvgIcon';
 import { selectQuickPanelData, selectQuickPanelOpen, toggleQuickPanel } from './quickPanelSlice';
 
 const StyledSwipeableDrawer = styled(SwipeableDrawer)(() => ({

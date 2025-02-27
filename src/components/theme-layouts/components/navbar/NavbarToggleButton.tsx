@@ -1,11 +1,11 @@
 import IconButton from '@mui/material/IconButton';
 import { useAppDispatch } from '@/store/hooks';
 import _ from 'lodash';
-import useThemeMediaQuery from '@fuse/hooks/useThemeMediaQuery';
-import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
+import useThemeMediaQuery from '@/@fuse/hooks/useThemeMediaQuery';
+import FuseSvgIcon from '@/@fuse/core/FuseSvgIcon';
 import type { IconButtonProps } from '@mui/material/IconButton/IconButton';
-import useFuseLayoutSettings from '@fuse/core/FuseLayout/useFuseLayoutSettings';
-import useFuseSettings from '@fuse/core/FuseSettings/hooks/useFuseSettings';
+import useFuseLayoutSettings from '@/@fuse/core/FuseLayout/useFuseLayoutSettings';
+import useFuseSettings from '@/@fuse/core/FuseSettings/hooks/useFuseSettings';
 import { navbarToggle, navbarToggleMobile } from './navbarSlice';
 
 export type NavbarToggleButtonProps = IconButtonProps;

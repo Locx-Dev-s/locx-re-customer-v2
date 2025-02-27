@@ -1,13 +1,13 @@
 import { Component, ReactNode } from 'react';
 import _ from 'lodash';
-import { defaultSettings, getParsedQuerySettings } from '@fuse/default-settings';
+import { defaultSettings, getParsedQuerySettings } from '@/@fuse/default-settings';
 import settingsConfig from '@/configs/settingsConfig';
 import themeLayoutConfigs from '@/components/theme-layouts/themeLayoutConfigs';
-import { FuseSettingsConfigType } from '@fuse/core/FuseSettings/FuseSettings';
-import { getFuseRouteParamUtil } from '@fuse/hooks/useFuseRouteParameter';
-import withRouter, { WithRouterProps } from '@fuse/core/withRouter/withRouter';
-import withUser from '@auth/withUser';
-import { User } from '@auth/user';
+import { FuseSettingsConfigType } from '@/@fuse/core/FuseSettings/FuseSettings';
+import { getFuseRouteParamUtil } from '@/@fuse/hooks/useFuseRouteParameter';
+import withRouter, { WithRouterProps } from '@/@fuse/core/withRouter/withRouter';
+import withUser from '@/@auth/withUser';
+import { User } from '@/@auth/user';
 import { PartialDeep } from 'type-fest';
 import FuseSettingsContext, { FuseSettingsContextType, FuseSettingsProviderState } from './FuseSettingsContext';
 

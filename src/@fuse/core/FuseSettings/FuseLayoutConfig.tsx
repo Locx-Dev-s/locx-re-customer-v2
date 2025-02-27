@@ -1,7 +1,7 @@
 import { Control } from 'react-hook-form';
 import { Typography } from '@mui/material';
-import { AnyFormFieldType } from '@fuse/core/FuseSettings/ThemeFormConfigTypes';
-import { FuseSettingsConfigType } from '@fuse/core/FuseSettings/FuseSettings';
+import { AnyFormFieldType } from '@/@fuse/core/FuseSettings/ThemeFormConfigTypes';
+import { FuseSettingsConfigType } from '@/@fuse/core/FuseSettings/FuseSettings';
 import FuseLayoutConfigs from './FuseLayoutConfigs';
 import RadioFormController from './form-controllers/RadioFormController';
 import SwitchFormController from './form-controllers/SwitchFormController';

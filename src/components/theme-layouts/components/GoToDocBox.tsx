@@ -1,8 +1,8 @@
 import { Box } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import clsx from 'clsx';
-import Link from '@fuse/core/Link';
-import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
+import Link from '@/@fuse/core/Link';
+import FuseSvgIcon from '@/@fuse/core/FuseSvgIcon';
 
 type GoToDocBoxProps = {
 	className?: string;

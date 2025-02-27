@@ -6,8 +6,8 @@ import { FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, Switch, Ty
 import { memo, useEffect, useMemo } from 'react';
 import { Palette } from '@mui/material/styles/createPalette';
 import { PartialDeep } from 'type-fest';
-import FuseLayoutConfigs from '@fuse/core/FuseSettings/FuseLayoutConfigs';
-import usePrevious from '@fuse/hooks/usePrevious';
+import FuseLayoutConfigs from '@/@fuse/core/FuseSettings/FuseLayoutConfigs';
+import usePrevious from '@/@fuse/hooks/usePrevious';
 import PaletteSelector from './palette-generator/PaletteSelector';
 import SectionPreview from './palette-generator/SectionPreview';
 

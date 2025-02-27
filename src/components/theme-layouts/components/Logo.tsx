@@ -1,4 +1,4 @@
-import { useMainTheme } from '@fuse/core/FuseSettings/hooks/fuseThemeHooks';
+import { useMainTheme } from '@/@fuse/core/FuseSettings/hooks/fuseThemeHooks';
 import { styled } from '@mui/material/styles';
 
 const Root = styled('div')(({ theme }) => ({

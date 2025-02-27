@@ -1,4 +1,4 @@
-import { FuseRouteItemType } from '@fuse/utils/FuseUtils';
+import { FuseRouteItemType } from '@/@fuse/utils/FuseUtils';
 import SignOutPage from './SignOutPage';
 
 const SignOutPageRoute: FuseRouteItemType = {

@@ -1,5 +1,5 @@
-import i18n from '@i18n';
-import type { FuseNavItemType } from '@fuse/core/FuseNavigation/types/FuseNavItemType';
+import i18n from '@/@i18n';
+import type { FuseNavItemType } from '@/@fuse/core/FuseNavigation/types/FuseNavItemType';
 
 import en from './navigation-i18n/en';
 import pt from './navigation-i18n/pt';

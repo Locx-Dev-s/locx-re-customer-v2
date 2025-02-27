@@ -10,8 +10,8 @@ import GlobalStyles from '@mui/material/GlobalStyles';
 import { Theme } from '@mui/system/createTheme';
 import clsx from 'clsx';
 import { useEffect } from 'react';
-import useFuseLayoutSettings from '@fuse/core/FuseLayout/useFuseLayoutSettings';
-import useThemeMediaQuery from '@fuse/hooks/useThemeMediaQuery';
+import useFuseLayoutSettings from '@/@fuse/core/FuseLayout/useFuseLayoutSettings';
+import useThemeMediaQuery from '@/@fuse/hooks/useThemeMediaQuery';
 import NavbarStyle3Content from './NavbarStyle3Content';
 import { Layout1ConfigDefaultsType } from '@/components/theme-layouts/layout1/Layout1Config';
 

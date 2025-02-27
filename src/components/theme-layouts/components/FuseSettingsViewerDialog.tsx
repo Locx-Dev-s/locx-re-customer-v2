@@ -1,15 +1,15 @@
 import { useState } from 'react';
 import clsx from 'clsx';
 import Button from '@mui/material/Button';
-import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
+import FuseSvgIcon from '@/@fuse/core/FuseSvgIcon';
 import Dialog from '@mui/material/Dialog';
-import FuseHighlight from '@fuse/core/FuseHighlight';
+import FuseHighlight from '@/@fuse/core/FuseHighlight';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import qs from 'qs';
 import Typography from '@mui/material/Typography';
-import useFuseSettings from '@fuse/core/FuseSettings/hooks/useFuseSettings';
+import useFuseSettings from '@/@fuse/core/FuseSettings/hooks/useFuseSettings';
 
 type FuseSettingsViewerDialogProps = {
 	className?: string;

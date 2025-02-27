@@ -1,6 +1,6 @@
 import Button from '@mui/material/Button';
-import Link from '@fuse/core/Link';
-import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
+import Link from '@/@fuse/core/Link';
+import FuseSvgIcon from '@/@fuse/core/FuseSvgIcon';
 
 type DocumentationButtonProps = {
 	className?: string;

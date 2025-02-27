@@ -1,8 +1,8 @@
 import React, { useEffect, useMemo } from 'react';
-import { FuseSettingsConfigType } from '@fuse/core/FuseSettings/FuseSettings';
+import { FuseSettingsConfigType } from '@/@fuse/core/FuseSettings/FuseSettings';
 import { themeLayoutsType } from '@/components/theme-layouts/themeLayouts';
-import usePathname from '@fuse/hooks/usePathname';
-import useFuseSettings from '@fuse/core/FuseSettings/hooks/useFuseSettings';
+import usePathname from '@/@fuse/hooks/usePathname';
+import useFuseSettings from '@/@fuse/core/FuseSettings/hooks/useFuseSettings';
 import FuseLayoutSettingsContext from './FuseLayoutSettingsContext';
 
 export type FuseRouteObjectType = {

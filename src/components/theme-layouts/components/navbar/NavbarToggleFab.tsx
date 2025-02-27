@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 
 import Tooltip from '@mui/material/Tooltip';
 import clsx from 'clsx';
-import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
+import FuseSvgIcon from '@/@fuse/core/FuseSvgIcon';
 
 const Root = styled(Tooltip)<{ position: 'left' | 'right' }>(({ theme }) => ({
 	'& > .button': {

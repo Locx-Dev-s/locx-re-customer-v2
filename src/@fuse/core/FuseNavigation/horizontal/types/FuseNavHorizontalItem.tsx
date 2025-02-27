@@ -1,10 +1,10 @@
-import NavLinkAdapter from '@fuse/core/NavLinkAdapter';
+import NavLinkAdapter from '@/@fuse/core/NavLinkAdapter';
 import { styled } from '@mui/material/styles';
 import ListItemText from '@mui/material/ListItemText';
 import clsx from 'clsx';
 import { memo, useMemo } from 'react';
 import { ListItemButton, ListItemButtonProps } from '@mui/material';
-import { WithRouterProps } from '@fuse/core/withRouter/withRouter';
+import { WithRouterProps } from '@/@fuse/core/withRouter/withRouter';
 import FuseNavBadge from '../../FuseNavBadge';
 import FuseSvgIcon from '../../../FuseSvgIcon';
 import { FuseNavItemComponentProps } from '../../FuseNavItem';

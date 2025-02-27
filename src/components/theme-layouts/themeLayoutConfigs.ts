@@ -1,4 +1,4 @@
-import ThemeFormConfigTypes from '@fuse/core/FuseSettings/ThemeFormConfigTypes';
+import ThemeFormConfigTypes from '@/@fuse/core/FuseSettings/ThemeFormConfigTypes';
 import layout1, { Layout1ConfigDefaultsType } from './layout1/Layout1Config';
 import layout2, { Layout2ConfigDefaultsType } from './layout2/Layout2Config';
 import layout3, { Layout3ConfigDefaultsType } from './layout3/Layout3Config';

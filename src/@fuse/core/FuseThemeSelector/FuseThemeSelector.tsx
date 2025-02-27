@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import ThemePreview, { FuseThemeOption } from '@fuse/core/FuseThemeSelector/ThemePreview';
+import ThemePreview, { FuseThemeOption } from '@/@fuse/core/FuseThemeSelector/ThemePreview';
 
 type FuseThemeSchemesProps = {
 	onSelect?: (t: FuseThemeOption) => void;

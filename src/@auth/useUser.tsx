@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
-import { User } from '@auth/user';
-import useAuth from '@fuse/core/FuseAuthProvider/useAuth';
+import { User } from '@/@auth/user';
+import useAuth from '@/@fuse/core/FuseAuthProvider/useAuth';
 import _ from 'lodash';
 import setIn from '@/utils/setIn';
 

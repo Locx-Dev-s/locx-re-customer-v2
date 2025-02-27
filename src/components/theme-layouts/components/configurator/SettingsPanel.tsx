@@ -1,17 +1,17 @@
-import FuseScrollbars from '@fuse/core/FuseScrollbars';
+import FuseScrollbars from '@/@fuse/core/FuseScrollbars';
 import IconButton from '@mui/material/IconButton';
-import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
+import FuseSvgIcon from '@/@fuse/core/FuseSvgIcon';
 import Typography from '@mui/material/Typography';
-import FuseSettings, { FuseSettingsConfigType } from '@fuse/core/FuseSettings/FuseSettings';
+import FuseSettings, { FuseSettingsConfigType } from '@/@fuse/core/FuseSettings/FuseSettings';
 import FuseSettingsViewerDialog from '@/components/theme-layouts/components/FuseSettingsViewerDialog';
 import { styled, useTheme } from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog';
 import Slide from '@mui/material/Slide';
 import { SwipeableHandlers } from 'react-swipeable';
-import useUser from '@auth/useUser';
-import useFuseSettings from '@fuse/core/FuseSettings/hooks/useFuseSettings';
+import useUser from '@/@auth/useUser';
+import useFuseSettings from '@/@fuse/core/FuseSettings/hooks/useFuseSettings';
 
-import { showMessage } from '@fuse/core/FuseMessage/fuseMessageSlice';
+import { showMessage } from '@/@fuse/core/FuseMessage/fuseMessageSlice';
 import { useAppDispatch } from '@/store/hooks';
 
 const StyledDialog = styled(Dialog)(({ theme }) => ({

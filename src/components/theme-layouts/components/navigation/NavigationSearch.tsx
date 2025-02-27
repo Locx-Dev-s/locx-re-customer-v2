@@ -1,4 +1,4 @@
-import FuseSearch from '@fuse/core/FuseSearch';
+import FuseSearch from '@/@fuse/core/FuseSearch';
 import useNavigation from './hooks/useNavigation';
 
 type NavigationSearchProps = {

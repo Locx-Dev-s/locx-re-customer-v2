@@ -1,11 +1,11 @@
 import { useAppSelector } from '@/store/hooks';
 import { useMemo } from 'react';
-import i18n from '@i18n';
-import useUser from '@auth/useUser';
-import useI18n from '@i18n/useI18n';
-import FuseUtils from '@fuse/utils';
-import FuseNavigationHelper from '@fuse/utils/FuseNavigationHelper';
-import { FuseNavItemType } from '@fuse/core/FuseNavigation/types/FuseNavItemType';
+import i18n from '@/@i18n';
+import useUser from '@/@auth/useUser';
+import useI18n from '@/@i18n/useI18n';
+import FuseUtils from '@/@fuse/utils';
+import FuseNavigationHelper from '@/@fuse/utils/FuseNavigationHelper';
+import { FuseNavItemType } from '@/@fuse/core/FuseNavigation/types/FuseNavItemType';
 import { selectNavigationAll } from '../store/navigationSlice';
 
 function useNavigation() {

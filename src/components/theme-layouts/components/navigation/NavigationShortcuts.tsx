@@ -1,9 +1,9 @@
-import FuseShortcuts from '@fuse/core/FuseShortcuts';
-import { usePrevious } from '@fuse/hooks';
+import FuseShortcuts from '@/@fuse/core/FuseShortcuts';
+import { usePrevious } from '@/@fuse/hooks';
 import { useEffect, useState } from 'react';
 import _ from 'lodash';
-import { User } from '@auth/user';
-import useUser from '@auth/useUser';
+import { User } from '@/@auth/user';
+import useUser from '@/@auth/useUser';
 import setIn from '@/utils/setIn';
 import useNavigation from './hooks/useNavigation';
 

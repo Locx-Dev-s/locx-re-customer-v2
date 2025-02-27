@@ -2,7 +2,7 @@ import { memo } from 'react';
 import clsx from 'clsx';
 import { Divider } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import FuseScrollbars from '@fuse/core/FuseScrollbars';
+import FuseScrollbars from '@/@fuse/core/FuseScrollbars';
 import Navigation from '@/components/theme-layouts/components/navigation/Navigation';
 import UserMenu from '@/components/theme-layouts/components/UserMenu';
 import NavbarPinToggleButton from '@/components/theme-layouts/components/navbar/NavbarPinToggleButton';

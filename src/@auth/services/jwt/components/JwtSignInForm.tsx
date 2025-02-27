@@ -7,7 +7,7 @@ import TextField from '@mui/material/TextField';
 import FormControl from '@mui/material/FormControl';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import Link from '@fuse/core/Link';
+import Link from '@/@fuse/core/Link';
 import Button from '@mui/material/Button';
 import useJwtAuth from '../useJwtAuth';
 import { FetchApiError } from '@/utils/apiFetch';

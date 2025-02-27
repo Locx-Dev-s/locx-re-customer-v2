@@ -10,7 +10,7 @@ import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import clsx from 'clsx';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import Link from '@fuse/core/Link';
+import Link from '@/@fuse/core/Link';
 import _ from 'lodash';
 import Box from '@mui/material/Box';
 import FuseSvgIcon from '../FuseSvgIcon';

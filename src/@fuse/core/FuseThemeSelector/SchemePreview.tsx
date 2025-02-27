@@ -1,7 +1,7 @@
 import { useTheme } from '@mui/material/styles';
 import clsx from 'clsx';
 import Typography from '@mui/material/Typography';
-import { FuseThemeType } from '@fuse/core/FuseSettings/FuseSettings';
+import { FuseThemeType } from '@/@fuse/core/FuseSettings/FuseSettings';
 
 type SchemePreviewProps = {
 	id: string;

@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { useMemo } from 'react';
 import rtlPlugin from 'stylis-plugin-rtl';
-import FuseTheme from '@fuse/core/FuseTheme';
-import { useMainTheme } from '@fuse/core/FuseSettings/hooks/fuseThemeHooks';
+import FuseTheme from '@/@fuse/core/FuseTheme';
+import { useMainTheme } from '@/@fuse/core/FuseSettings/hooks/fuseThemeHooks';
 import createCache, { Options, StylisPlugin } from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';
 

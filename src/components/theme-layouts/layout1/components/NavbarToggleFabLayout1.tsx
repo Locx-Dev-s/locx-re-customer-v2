@@ -1,8 +1,8 @@
 import { useAppDispatch } from '@/store/hooks';
-import useThemeMediaQuery from '@fuse/hooks/useThemeMediaQuery';
+import useThemeMediaQuery from '@/@fuse/hooks/useThemeMediaQuery';
 import { navbarToggle, navbarToggleMobile } from '@/components/theme-layouts/components/navbar/navbarSlice';
 import NavbarToggleFab from '@/components/theme-layouts/components/navbar/NavbarToggleFab';
-import useFuseLayoutSettings from '@fuse/core/FuseLayout/useFuseLayoutSettings';
+import useFuseLayoutSettings from '@/@fuse/core/FuseLayout/useFuseLayoutSettings';
 import { Layout1ConfigDefaultsType } from '@/components/theme-layouts/layout1/Layout1Config';
 
 type NavbarToggleFabLayout1Props = {

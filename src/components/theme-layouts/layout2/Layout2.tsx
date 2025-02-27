@@ -1,11 +1,11 @@
-import FuseDialog from '@fuse/core/FuseDialog';
+import FuseDialog from '@/@fuse/core/FuseDialog';
 import { styled } from '@mui/material/styles';
-import FuseMessage from '@fuse/core/FuseMessage';
+import FuseMessage from '@/@fuse/core/FuseMessage';
 import clsx from 'clsx';
 import { ReactNode, memo, Suspense } from 'react';
 import { Layout2ConfigDefaultsType } from '@/components/theme-layouts/layout2/Layout2Config';
-import useFuseLayoutSettings from '@fuse/core/FuseLayout/useFuseLayoutSettings';
-import FuseSuspense from '@fuse/core/FuseSuspense';
+import useFuseLayoutSettings from '@/@fuse/core/FuseLayout/useFuseLayoutSettings';
+import FuseSuspense from '@/@fuse/core/FuseSuspense';
 import { Outlet } from 'react-router';
 import FooterLayout2 from './components/FooterLayout2';
 import LeftSideLayout2 from './components/LeftSideLayout2';

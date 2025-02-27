@@ -1,9 +1,9 @@
 import Typography from '@mui/material/Typography';
-import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
+import FuseSvgIcon from '@/@fuse/core/FuseSvgIcon';
 import { Chip } from '@mui/material';
 import clsx from 'clsx';
 import { ReactNode } from 'react';
-import Link from '@fuse/core/Link';
+import Link from '@/@fuse/core/Link';
 
 export type PageTitleProps = {
 	className?: string;

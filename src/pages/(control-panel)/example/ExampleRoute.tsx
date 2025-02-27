@@ -1,7 +1,7 @@
 import { lazy } from 'react';
 import i18next from 'i18next';
 
-import type { FuseRouteItemType } from '@fuse/utils/FuseUtils';
+import type { FuseRouteItemType } from '@/@fuse/utils/FuseUtils';
 
 import en from './i18n/en';
 import pt from './i18n/pt';

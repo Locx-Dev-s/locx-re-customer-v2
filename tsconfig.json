@@ -2,28 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-     "@auth/*": [
-        "./src/@auth/*"
-      ],
-      "@i18n": [
-        "./src/@i18n/index"
-      ],
-      "@i18n/*": [
-        "./src/@i18n/*"
-      ],
-      "@fuse/*": ["./src/@fuse/*"],
-      "@history*": [
-        "./src/@history"
-      ],
-      "@mock-utils/*": [
-        "./src/@mock-utils/*"
-      ],
-      "@schema": [
-        "./src/@schema"
-      ],
-    "@/*": [
-      "./src/*"
-    ]
+      "@/*": ["./src/*"]
     },
     "declaration": true,
     "target": "esnext",
@@ -48,19 +27,18 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "types": ["node", "vitest/globals", "@testing-library/jest-dom"]
   },
-  "exclude": [
-    "src/app/(public)/documentation/material-ui-components/components/**/*",
-    "src/app/(public)/documentation/material-ui-components/doc/**/*",
-    "node_modules"
-  ],
+  "exclude": ["node_modules"],
   "include": [
     "./src/**/*.ts",
     "./src/**/*.tsx",
     "./src/global.d.ts",
-    "tailwind.config.ts",
-    "vite.config.mts",
-    "vite-env.d.ts"
+    "vite-env.d.ts",
+    "vite.config.ts",
+    "vitest.config.ts",
+    "vitest.setup.ts",
+    "cypress.config.ts"
   ],
 }

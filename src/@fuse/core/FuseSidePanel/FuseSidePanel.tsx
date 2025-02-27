@@ -1,4 +1,4 @@
-import FuseScrollbars from '@fuse/core/FuseScrollbars';
+import FuseScrollbars from '@/@fuse/core/FuseScrollbars';
 import { styled } from '@mui/material/styles';
 import Fab from '@mui/material/Fab';
 import IconButton from '@mui/material/IconButton';

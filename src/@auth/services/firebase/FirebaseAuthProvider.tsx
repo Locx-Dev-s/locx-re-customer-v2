@@ -1,8 +1,8 @@
 import { useState, useEffect, useCallback, useMemo, useImperativeHandle } from 'react';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
-import { FuseAuthProviderComponentProps, FuseAuthProviderState } from '@fuse/core/FuseAuthProvider/types/FuseAuthTypes';
-import { authCreateDbUser, authGetDbUserByEmail, authUpdateDbUser } from '@auth/authApi';
+import { FuseAuthProviderComponentProps, FuseAuthProviderState } from '@/@fuse/core/FuseAuthProvider/types/FuseAuthTypes';
+import { authCreateDbUser, authGetDbUserByEmail, authUpdateDbUser } from '@/@auth/authApi';
 import { PartialDeep } from 'type-fest';
 import { initializeFirebase } from './initializeFirebase';
 import { User } from '../../user';

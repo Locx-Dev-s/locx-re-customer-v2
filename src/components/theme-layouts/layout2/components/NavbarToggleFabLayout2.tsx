@@ -1,5 +1,5 @@
 import { useAppDispatch } from '@/store/hooks';
-import useThemeMediaQuery from '@fuse/hooks/useThemeMediaQuery';
+import useThemeMediaQuery from '@/@fuse/hooks/useThemeMediaQuery';
 import NavbarToggleFab from '@/components/theme-layouts/components/navbar/NavbarToggleFab';
 import { navbarToggle, navbarToggleMobile } from '@/components/theme-layouts/components/navbar/navbarSlice';
 

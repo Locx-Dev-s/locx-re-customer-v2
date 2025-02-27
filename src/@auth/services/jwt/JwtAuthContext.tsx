@@ -1,7 +1,7 @@
-import { FuseAuthProviderState } from '@fuse/core/FuseAuthProvider/types/FuseAuthTypes';
-import { User } from '@auth/user';
+import { FuseAuthProviderState } from '@/@fuse/core/FuseAuthProvider/types/FuseAuthTypes';
+import { User } from '@/@auth/user';
 import { createContext } from 'react';
-import { JwtSignInPayload, JwtSignUpPayload } from '@auth/services/jwt/JwtAuthProvider';
+import { JwtSignInPayload, JwtSignUpPayload } from '@/@auth/services/jwt/JwtAuthProvider';
 
 export type JwtAuthContextType = FuseAuthProviderState<User> & {
 	updateUser: (U: User) => Promise<Response>;

@@ -1,5 +1,5 @@
 import { createContext } from 'react';
-import { FuseRoutesType } from '@fuse/utils/FuseUtils';
+import { FuseRoutesType } from '@/@fuse/utils/FuseUtils';
 
 /**
  * The type of the AppContext value.

@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
-import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
-import { FuseThemeOption } from '@fuse/core/FuseThemeSelector/ThemePreview';
+import FuseSvgIcon from '@/@fuse/core/FuseSvgIcon';
+import { FuseThemeOption } from '@/@fuse/core/FuseThemeSelector/ThemePreview';
 import clsx from 'clsx';
-import { useMainTheme } from '@fuse/core/FuseSettings/hooks/fuseThemeHooks';
-import useFuseSettings from '@fuse/core/FuseSettings/hooks/useFuseSettings';
-import { FuseSettingsConfigType } from '@fuse/core/FuseSettings/FuseSettings';
-import { showMessage } from '@fuse/core/FuseMessage/fuseMessageSlice';
-import useUser from '@auth/useUser';
+import { useMainTheme } from '@/@fuse/core/FuseSettings/hooks/fuseThemeHooks';
+import useFuseSettings from '@/@fuse/core/FuseSettings/hooks/useFuseSettings';
+import { FuseSettingsConfigType } from '@/@fuse/core/FuseSettings/FuseSettings';
+import { showMessage } from '@/@fuse/core/FuseMessage/fuseMessageSlice';
+import useUser from '@/@auth/useUser';
 import { useAppDispatch } from '@/store/hooks';
 
 type LightDarkModeToggleProps = {

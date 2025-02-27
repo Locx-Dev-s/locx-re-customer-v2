@@ -1,5 +1,5 @@
-import { FuseSettingsConfigType } from '@fuse/core/FuseSettings/FuseSettings';
-import { FuseAuthUser } from '@fuse/core/FuseAuthProvider/types/FuseAuthUser';
+import { FuseSettingsConfigType } from '@/@fuse/core/FuseSettings/FuseSettings';
+import { FuseAuthUser } from '@/@fuse/core/FuseAuthProvider/types/FuseAuthUser';
 import { PartialDeep } from 'type-fest';
 
 /**

@@ -1,4 +1,4 @@
-import NavLinkAdapter from '@fuse/core/NavLinkAdapter';
+import NavLinkAdapter from '@/@fuse/core/NavLinkAdapter';
 import { alpha, styled } from '@mui/material/styles';
 import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
@@ -6,9 +6,9 @@ import ListItemText from '@mui/material/ListItemText';
 import clsx from 'clsx';
 import { useMemo, useState } from 'react';
 import List, { ListProps } from '@mui/material/List';
-import isUrlInChildren from '@fuse/core/FuseNavigation/isUrlInChildren';
+import isUrlInChildren from '@/@fuse/core/FuseNavigation/isUrlInChildren';
 import { ListItemButton } from '@mui/material';
-import usePathname from '@fuse/hooks/usePathname';
+import usePathname from '@/@fuse/hooks/usePathname';
 import FuseNavBadge from '../../FuseNavBadge';
 import FuseNavItem, { FuseNavItemComponentProps } from '../../FuseNavItem';
 import FuseSvgIcon from '../../../FuseSvgIcon';

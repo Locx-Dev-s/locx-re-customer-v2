@@ -1,7 +1,7 @@
 import React, { useCallback, useMemo, useState, useRef, useEffect } from 'react';
 import { PartialDeep } from 'type-fest';
-import FuseLoading from '@fuse/core/FuseLoading';
-import { User } from '@auth/user';
+import FuseLoading from '@/@fuse/core/FuseLoading';
+import { User } from '@/@auth/user';
 import { FuseAuthProviderType, FuseAuthProviderMethods, FuseAuthProviderState } from './types/FuseAuthTypes';
 import FuseAuthContext from './FuseAuthContext';
 import { AuthState, initialAuthState } from './FuseAuthContext';

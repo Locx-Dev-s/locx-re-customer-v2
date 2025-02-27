@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import awsStyles from '@aws-amplify/ui-react/styles.css?inline';
 import { styled } from '@mui/material/styles';
 import { useAuthenticator } from '@aws-amplify/ui-react';
-import FuseLoading from '@fuse/core/FuseLoading';
+import FuseLoading from '@/@fuse/core/FuseLoading';
 import { Global } from '@emotion/react';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error

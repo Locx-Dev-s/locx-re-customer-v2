@@ -1,18 +1,19 @@
-import FuseLayout from '@fuse/core/FuseLayout';
 import { SnackbarProvider } from 'notistack';
-import themeLayouts from '@/components/theme-layouts/themeLayouts';
 import { Provider } from 'react-redux';
-import FuseSettingsProvider from '@fuse/core/FuseSettings/FuseSettingsProvider';
-import { I18nProvider } from '@i18n/I18nProvider';
-import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFnsV3';
 import { enUS } from 'date-fns/locale/en-US';
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFnsV3';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import ErrorBoundary from '@fuse/utils/ErrorBoundary';
-import Authentication from '@auth/Authentication';
+
+import { I18nProvider } from '@/@i18n/I18nProvider';
+import FuseLayout from '@/@fuse/core/FuseLayout';
+import FuseSettingsProvider from '@/@fuse/core/FuseSettings/FuseSettingsProvider';
+import ErrorBoundary from '@/@fuse/utils/ErrorBoundary';
+import Authentication from '@/@auth/Authentication';
+import themeLayouts from '@/components/theme-layouts/themeLayouts';
+import AppContext from '@/contexts/AppContext';
 import MainThemeProvider from '@/contexts/MainThemeProvider';
 import store from '@/store/store';
 import routes from '@/configs/routesConfig';
-import AppContext from '@/contexts/AppContext';
 
 /**
  * The main App component.

@@ -1,17 +1,17 @@
-import FuseScrollbars from '@fuse/core/FuseScrollbars';
+import FuseScrollbars from '@/@fuse/core/FuseScrollbars';
 import { styled } from '@mui/material/styles';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 import clsx from 'clsx';
 import { memo, useEffect, useState } from 'react';
 import { useAppDispatch } from '@/store/hooks';
-import FuseNavigation from '@fuse/core/FuseNavigation';
-import useThemeMediaQuery from '@fuse/hooks/useThemeMediaQuery';
-import isUrlInChildren from '@fuse/core/FuseNavigation/isUrlInChildren';
+import FuseNavigation from '@/@fuse/core/FuseNavigation';
+import useThemeMediaQuery from '@/@fuse/hooks/useThemeMediaQuery';
+import isUrlInChildren from '@/@fuse/core/FuseNavigation/isUrlInChildren';
 import { Theme } from '@mui/system';
-import { FuseNavItemType } from '@fuse/core/FuseNavigation/types/FuseNavItemType';
+import { FuseNavItemType } from '@/@fuse/core/FuseNavigation/types/FuseNavItemType';
 import { navbarCloseMobile } from '@/components/theme-layouts/components/navbar/navbarSlice';
 import UserMenu from '@/components/theme-layouts/components/UserMenu';
-import usePathname from '@fuse/hooks/usePathname';
+import usePathname from '@/@fuse/hooks/usePathname';
 import useNavigation from '@/components/theme-layouts/components/navigation/hooks/useNavigation';
 
 const Root = styled('div')(({ theme }) => ({

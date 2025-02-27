@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo, type ReactNode } from 'react';
 import _ from 'lodash';
-import useFuseSettings from '@fuse/core/FuseSettings/hooks/useFuseSettings';
+import useFuseSettings from '@/@fuse/core/FuseSettings/hooks/useFuseSettings';
 import i18n from './i18n';
 import I18nContext from './I18nContext';
 import type { LanguageType } from './I18nContext';

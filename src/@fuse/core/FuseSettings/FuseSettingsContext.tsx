@@ -1,4 +1,4 @@
-import { FuseSettingsConfigType } from '@fuse/core/FuseSettings/FuseSettings';
+import { FuseSettingsConfigType } from '@/@fuse/core/FuseSettings/FuseSettings';
 import { PartialDeep } from 'type-fest';
 import { createContext } from 'react';
 export type FuseSettingsProviderState = {

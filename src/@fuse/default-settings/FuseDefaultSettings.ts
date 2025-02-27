@@ -1,7 +1,7 @@
 import { createTheme } from '@mui/material/styles';
 import qs from 'qs';
 import type { ThemeOptions } from '@mui/material/styles/createTheme';
-import type { FuseSettingsConfigType } from '@fuse/core/FuseSettings/FuseSettings';
+import type { FuseSettingsConfigType } from '@/@fuse/core/FuseSettings/FuseSettings';
 
 /**
  * The defaultTheme object defines the default color palette for the application.

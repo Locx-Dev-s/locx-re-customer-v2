@@ -1,17 +1,17 @@
 import { styled } from '@mui/material/styles';
-import FuseMessage from '@fuse/core/FuseMessage';
+import FuseMessage from '@/@fuse/core/FuseMessage';
 import { memo, ReactNode, Suspense } from 'react';
 import { Outlet } from 'react-router';
 import { Layout1ConfigDefaultsType } from '@/components/theme-layouts/layout1/Layout1Config';
 import Configurator from '@/components/theme-layouts/components/configurator/Configurator';
-import useFuseLayoutSettings from '@fuse/core/FuseLayout/useFuseLayoutSettings';
-import FuseSuspense from '@fuse/core/FuseSuspense';
+import useFuseLayoutSettings from '@/@fuse/core/FuseLayout/useFuseLayoutSettings';
+import FuseSuspense from '@/@fuse/core/FuseSuspense';
 import FooterLayout1 from './components/FooterLayout1';
 import LeftSideLayout1 from './components/LeftSideLayout1';
 import NavbarWrapperLayout1 from './components/NavbarWrapperLayout1';
 import RightSideLayout1 from './components/RightSideLayout1';
 import ToolbarLayout1 from './components/ToolbarLayout1';
-import FuseDialog from '@fuse/core/FuseDialog';
+import FuseDialog from '@/@fuse/core/FuseDialog';
 
 const Root = styled('div')(({ config }: { config: Layout1ConfigDefaultsType }) => ({
 	...(config.mode === 'boxed' && {

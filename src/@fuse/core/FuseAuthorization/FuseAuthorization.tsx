@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import withRouter, { WithRouterProps } from '@fuse/core/withRouter/withRouter';
+import withRouter, { WithRouterProps } from '@/@fuse/core/withRouter/withRouter';
 import {
 	getSessionRedirectUrl,
 	resetSessionRedirectUrl,
 	setSessionRedirectUrl
-} from '@fuse/core/FuseAuthorization/sessionRedirectUrl';
-import { getFuseRouteParamUtil } from '@fuse/hooks/useFuseRouteParameter';
-import FuseUtils from '@fuse/utils/FuseUtils';
-import { FuseRouteObjectType } from '@fuse/core/FuseLayout/FuseLayout';
+} from '@/@fuse/core/FuseAuthorization/sessionRedirectUrl';
+import { getFuseRouteParamUtil } from '@/@fuse/hooks/useFuseRouteParameter';
+import FuseUtils from '@/@fuse/utils/FuseUtils';
+import { FuseRouteObjectType } from '@/@fuse/core/FuseLayout/FuseLayout';
 import FuseLoading from '../FuseLoading';
 
 type FuseAuthorizationProps = {
