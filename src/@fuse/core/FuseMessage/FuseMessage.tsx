@@ -1,11 +1,14 @@
-import { amber, blue, green } from '@mui/material/colors';
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import Snackbar from '@mui/material/Snackbar';
 import SnackbarContent from '@mui/material/SnackbarContent';
 import Typography from '@mui/material/Typography';
 import { memo } from 'react';
-import { hideMessage, selectFuseMessageOptions, selectFuseMessageState } from '@/@fuse/core/FuseMessage/fuseMessageSlice';
+import {
+	hideMessage,
+	selectFuseMessageOptions,
+	selectFuseMessageState
+} from '@/@fuse/core/FuseMessage/fuseMessageSlice';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import FuseSvgIcon from '../FuseSvgIcon';
 
@@ -24,8 +27,8 @@ const StyledSnackbar = styled(Snackbar)<StyledSnackbarProps>(({ theme }) => ({
 			},
 			style: {
 				'& .FuseMessage-content': {
-					backgroundColor: green[600],
-					color: '#FFFFFF'
+					backgroundColor: 'var(--color-success-200)',
+					color: theme.palette.success.dark
 				}
 			}
 		},
@@ -35,8 +38,8 @@ const StyledSnackbar = styled(Snackbar)<StyledSnackbarProps>(({ theme }) => ({
 			},
 			style: {
 				'& .FuseMessage-content': {
-					backgroundColor: theme.palette.error.dark,
-					color: theme.palette.getContrastText(theme.palette.error.dark)
+					backgroundColor: 'var(--color-danger-200)',
+					color: theme.palette.error.dark
 				}
 			}
 		},
@@ -46,8 +49,8 @@ const StyledSnackbar = styled(Snackbar)<StyledSnackbarProps>(({ theme }) => ({
 			},
 			style: {
 				'& .FuseMessage-content': {
-					backgroundColor: blue[600],
-					color: '#FFFFFF'
+					backgroundColor: 'var(--color-info-200)',
+					color: theme.palette.info.dark
 				}
 			}
 		},
@@ -57,8 +60,8 @@ const StyledSnackbar = styled(Snackbar)<StyledSnackbarProps>(({ theme }) => ({
 			},
 			style: {
 				'& .FuseMessage-content': {
-					backgroundColor: amber[600],
-					color: '#FFFFFF'
+					backgroundColor: 'var(--color-warning-200)',
+					color: theme.palette.warning.dark
 				}
 			}
 		}
@@ -66,10 +69,10 @@ const StyledSnackbar = styled(Snackbar)<StyledSnackbarProps>(({ theme }) => ({
 }));
 
 const variantIcon = {
-	success: 'check_circle',
-	warning: 'warning',
-	error: 'error_outline',
-	info: 'info'
+	success: 'heroicons-outline:check-badge',
+	warning: 'heroicons-outline:exclamation-circle',
+	error: 'heroicons-outline:exclamation-circle',
+	info: 'heroicons-outline:exclamation-triangle'
 };
 
 /**
@@ -92,9 +95,14 @@ function FuseMessage() {
 				message={
 					<div className="flex items-center">
 						{variantIcon[options.variant] && (
-							<FuseSvgIcon color="inherit">{variantIcon[options.variant]}</FuseSvgIcon>
+							<FuseSvgIcon
+								color="inherit"
+								size={16}
+							>
+								{variantIcon[options.variant]}
+							</FuseSvgIcon>
 						)}
-						<Typography className="mx-2">{options.message}</Typography>
+						<Typography className="mx-2 text-sm font-bold">{options.message}</Typography>
 					</div>
 				}
 				action={[

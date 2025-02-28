@@ -26,8 +26,8 @@ const initialState: initialStateProps = {
 	options: {
 		variant: 'info',
 		anchorOrigin: {
-			vertical: 'top',
-			horizontal: 'center'
+			vertical: 'bottom',
+			horizontal: 'right'
 		},
 		autoHideDuration: 2000,
 		message: 'Hi'
