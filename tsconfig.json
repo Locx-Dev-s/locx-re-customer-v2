@@ -35,6 +35,7 @@
     "./src/**/*.ts",
     "./src/**/*.tsx",
     "./src/global.d.ts",
+    "./src/theme.d.ts",
     "vite-env.d.ts",
     "vite.config.ts",
     "vitest.config.ts",

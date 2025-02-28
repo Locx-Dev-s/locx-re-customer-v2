@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite';
 import vitePluginReact from '@vitejs/plugin-react';
-import vitePluginSvgr  from 'vite-plugin-svgr';
+import vitePluginSvgr from 'vite-plugin-svgr';
 import vitePluginTsconfigPaths from 'vite-tsconfig-paths';
 import tailwindcss from '@tailwindcss/vite';
-import path from 'path';
+import path from 'node:path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
