@@ -1,17 +1,22 @@
-import { styled } from '@mui/material/styles';
-import FuseMessage from '@/@fuse/core/FuseMessage';
-import { memo, ReactNode, Suspense } from 'react';
+import { memo, type ReactNode, Suspense } from 'react';
 import { Outlet } from 'react-router';
-import { Layout1ConfigDefaultsType } from '@/components/theme-layouts/layout1/Layout1Config';
-import Configurator from '@/components/theme-layouts/components/configurator/Configurator';
+import _ from 'lodash';
+
+import { styled } from '@mui/material/styles';
+
+import FuseMessage from '@/@fuse/core/FuseMessage';
 import useFuseLayoutSettings from '@/@fuse/core/FuseLayout/useFuseLayoutSettings';
 import FuseSuspense from '@/@fuse/core/FuseSuspense';
+import FuseDialog from '@/@fuse/core/FuseDialog';
+import themeOptions from '@/configs/themeOptions';
+import LightDarkModeToggle from '@/components/app/LightDarkModeToggle';
+import type { Layout1ConfigDefaultsType } from '@/components/theme-layouts/layout1/Layout1Config';
+
 import FooterLayout1 from './components/FooterLayout1';
 import LeftSideLayout1 from './components/LeftSideLayout1';
 import NavbarWrapperLayout1 from './components/NavbarWrapperLayout1';
 import RightSideLayout1 from './components/RightSideLayout1';
 import ToolbarLayout1 from './components/ToolbarLayout1';
-import FuseDialog from '@/@fuse/core/FuseDialog';
 
 const Root = styled('div')(({ config }: { config: Layout1ConfigDefaultsType }) => ({
 	...(config.mode === 'boxed' && {
@@ -61,7 +66,10 @@ function Layout1(props: Layout1Props) {
 					)}
 
 					<div className="sticky top-0 z-99">
-						<Configurator />
+						<LightDarkModeToggle
+							lightTheme={_.find(themeOptions, { id: 'Default' })}
+							darkTheme={_.find(themeOptions, { id: 'Default Dark' })}
+						/>
 					</div>
 
 					<div className="relative z-10 flex min-h-0 flex-auto flex-col">
